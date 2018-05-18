@@ -30,7 +30,7 @@ I found that it would be more easy to use a webpage to convert codes.
 No C/C++, sketchy compiled code or python's code. Enjoy.
 
 And why I think people should be aware of this:
-https://www.youtube.com/watch?v=XJCQBqTmGUU
+https://youtu.be/XJCQBqTmGUU?t=17m23s
 
 
 ## Scripts/payload:
