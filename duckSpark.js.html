@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!-- saved from url=(0027)https://seytonic.com/ducky/ -->
+<html lang="en" class="fa-events-icons-ready"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+
+    <!-- Including libs used by the page -->
+    <script src="./duckSpark.js_files/jquery-3.1.0.min.js.download"></script><svg id="dark-reader-svg" style="height: 0px; width: 0px;"><filter id="dark-reader-filter" x="0" y="0" width="99999" height="99999" style="color-interpolation-filters: sRGB;"><fecolormatrix type="matrix" values="0.095 -0.433 -0.594 0.000 0.983 -0.548 0.216 -0.587 0.000 0.969 -0.539 -0.430 0.074 0.000 0.944 0.000 0.000 0.000 1.000 0.000"></fecolormatrix></filter><filter id="dark-reader-reverse-filter" x="0" y="0" width="99999" height="99999" style="color-interpolation-filters: sRGB;"><fecolormatrix type="matrix" values="0.333 -0.667 -0.667 0.000 1.000 -0.667 0.333 -0.667 0.000 1.000 -0.667 -0.667 0.333 0.000 1.000 0.000 0.000 0.000 1.000 0.000"></fecolormatrix></filter></svg><style id="dark-reader-style" type="text/css">@media screen {
+
+/* Leading rule */
+html {
+  -webkit-filter: url(#dark-reader-filter) !important;
+  filter: url(#dark-reader-filter) !important;
+}
+
+/* Reverse rule */
+img,
+video,
+:not(object):not(body)>embed,
+object,
+svg image,
+[style*="background:url"],
+[style*="background-image:url"],
+[style*="background: url"],
+[style*="background-image: url"],
+[background],
+twitterwidget {
+  -webkit-filter: url(#dark-reader-reverse-filter) !important;
+  filter: url(#dark-reader-reverse-filter) !important;
+}
+[style*="background:url"] *,
+[style*="background-image:url"] *,
+[style*="background: url"] *,
+[style*="background-image: url"] *,
+input,
+[background] * {
+  -webkit-filter: none !important;
+  filter: none !important;
+}
+.compatibility-with-darkreader-below-4-3-3 {
+  background: white !important;
+}
+
+/* Text contrast */
+html {
+  text-shadow: 0 0 0 !important;
+}
+
+/* Full screen */
+:-webkit-full-screen, :-webkit-full-screen * {
+  -webkit-filter: none !important;
+  filter: none !important;
+}
+:-moz-full-screen, :-moz-full-screen * {
+  -webkit-filter: none !important;
+  filter: none !important;
+}
+:fullscreen, :fullscreen * {
+  -webkit-filter: none !important;
+  filter: none !important;
+}
+
+/* Page background */
+html {
+  background: rgb(13,13,12) !important;
+}
+
+/* Custom rules */
+.compatibility-with-darkreader-below-4-3-3 {
+    background: white !important;
+}
+
+}</style>
+    <script src="./duckSpark.js_files/jszip-3.1.2.min.js.download"></script>
+    <script src="./duckSpark.js_files/FileSaver-1.3.2.min.js.download"></script>
+
+    <!-- LocaleKeyboard.js -->
+    <script src="./duckSpark.js_files/LocaleKeyboard.js.download"></script>
+
+    <!-- Page style -->
+    <link rel="stylesheet" type="text/css" href="./duckSpark.js_files/style.css">
+
+    <!-- Fontawesome -->
+    <script src="./duckSpark.js_files/3db0bc0c36.js.download"></script><link href="./duckSpark.js_files/3db0bc0c36.css" media="all" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://seytonic.com/ducky/favicon.png">
+    <title>Dckuino.js</title>
+  </head>
+  <body>
+    <!-- Ribbon -->
+    <a href="https://github.com/Thecakeisgit/Dckuino.js/issues/new" target="_blank"><div class="issue-ribbon red"><i class="fa fa-exclamation"></i> Submit an issue !</div></a>
+
+    <!-- The popup -->
+    <div id="dl-popup" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">x</span>
+        Select a locale :
+        <select id="locale-select"></select>
+        <input id="dl-filename" type="text">
+        <button id="start-dl">Start Download !</button>
+      </div>
+
+    </div>
+
+    <!-- Menu -->
+    <menu>
+      <a class="left compile-but hoverable">
+        <i class="fa fa-play"></i>
+        Compile
+      </a>
+      <a class="left dl-but disabled">
+        <span class="fa-stack fa">
+          <i class="fa fa-download fa-stack-1x"></i>
+          <i class="fa fa-ban text-danger fa-stack-1x" style="color: rgb(222, 27, 27); opacity: 1;"></i>
+        </span>
+        Download sketch !
+      </a>
+
+      <a class="right hoverable" href="https://github.com/Thecakeisgit/Dckuino.js" target="_blank">
+        <i class="fa fa-github-alt"></i>
+        See this on GitHub &lt;3 !
+      </a>
+      <a class="right hoverable" href="https://github.com/hak5darren/USB-Rubber-Ducky/wiki/Payloads" target="_blank">
+        <i class="fa fa-code"></i>
+        Hak5 Payloads
+      </a>
+    </menu>
+
+    <!-- I/O Dckuino -->
+    <div class="inout-wrapper">
+      <textarea class="inout duckyscript"></textarea>
+      <textarea class="inout arduino" readonly=""></textarea>
+    </div>
+
+    <!-- Console I/O -->
+    <div class="console-wrapper">
+      <textarea class="console" readonly=""></textarea>
+    </div>
+
+    <!-- Handmade js <3 -->
+    <script src="./duckSpark.js_files/Dckuino.js.download"></script>
+    <script src="./duckSpark.js_files/main.js.download"></script>
+  
+
+</body></html>
