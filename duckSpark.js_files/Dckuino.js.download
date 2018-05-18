@@ -179,7 +179,7 @@ class Dckuinojs {
     + ' * Generated with <3 by Dckuino.js, an open source project ! Please check the Nurrl github, and style sheet from Seytonic`s website Modified by gg64du02\n'
     + ' */\n\n'
     + '#include "DigiKeyboard.h"\n\n'
-    + 'void typeKey(int key)\n'
+    //+ 'void typeKey(int key)\n'
     + '\n'
     + 'void setup()\n'
     + '{\n'
