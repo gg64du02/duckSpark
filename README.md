@@ -23,7 +23,6 @@ Those next, you can get on your favorite chinese seller website:
 
 (optionnal) Resin or thermo-shapable plastic to secure the male usb plug
 
-
 ## Why:
 
 I found that it would be more easy to use a webpage to convert codes.
@@ -32,6 +31,13 @@ No C/C++, sketchy compiled code or python's code. Enjoy.
 And why I think people should be aware of this:
 https://youtu.be/XJCQBqTmGUU?t=17m23s
 
+## For French users or azerty keyboard users:
+
+Please use the provided .h librairy to get the correct ascii codes to get the proper results.
+
+You could find them in the DigisparkKeyboard-azerty folder. 
+Check the README inside the folder. 
+You have to change files at the specified location.
 
 ## Scripts/payload:
 
