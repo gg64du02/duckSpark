@@ -28,9 +28,10 @@ var commandMap = { // Key that can be typed
   ESCAPE:'KEY_LEFT_ESC',
   ESC:'KEY_LEFT_ESC',
   GUI:'MOD_GUI_LEFT',	//ok
-  WINDOWS:'MOD_GUI_LEFT',	//ok
+  //WINDOWS:'MOD_GUI_LEFT',	//ok
+  WINDOWS:'MODIFIERKEY_LEFT_GUI',	//ok
   COMMAND:'MOD_GUI_LEFT',	//ok
-  MENU:'229',
+  MENU:'KEY_MENU',
   APP:'229',
   END:'KEY_END',
   SPACE:'KEY_SPACE',	//ok
@@ -38,14 +39,14 @@ var commandMap = { // Key that can be typed
   PRINTSCREEN:'206',
   ENTER:'KEY_ENTER',	//ok
   RETURN:'KEY_ENTER',	//ok
-  UPARROW:'KEY_UP_ARROW',
-  DOWNARROW:'KEY_DOWN_ARROW',
-  LEFTARROW:'KEY_LEFT_ARROW',
-  RIGHTARROW:'KEY_RIGHT_ARROW',
-  UP:'KEY_UP_ARROW',
-  DOWN:'KEY_DOWN_ARROW',
-  LEFT:'KEY_LEFT_ARROW',
-  RIGHT:'KEY_RIGHT_ARROW',
+  UPARROW:'UPARROW',
+  DOWNARROW:'DOWNARROW',
+  LEFTARROW:'LEFTARROW',
+  RIGHTARROW:'RIGHTARROW',
+  UP:'UPARROW',
+  DOWN:'DOWNARROW',
+  LEFT:'LEFTARROW',
+  RIGHT:'RIGHTARROW',
   CAPSLOCK:'KEY_CAPS_LOCK',
   DELETE:'KEY_DELETE',
   DEL:'KEY_DELETE',
@@ -62,7 +63,8 @@ var commandMap = { // Key that can be typed
   F11:'KEY_F11',	//ok
   F12:'KEY_F12',	//ok
   PAGEUP:'KEY_PAGE_UP',
-  PAGEDOWN:'KEY_PAGE_DOWN'
+  PAGEDOWN:'KEY_PAGE_DOWN',
+  BACKSPACE:'BACKSPACE'//added by gg
 };
 
 /*
@@ -178,8 +180,14 @@ class Dckuinojs {
     return '/*\n'
     + ' * Generated with <3 by Dckuino.js, an open source project ! Please check the Nurrl github, and style sheet from Seytonic`s website Modified by gg64du02\n'
     + ' */\n\n'
-    + '#include "DigiKeyboard.h"\n\n'
-    //+ 'void typeKey(int key)\n'
+    + '#include "DigiKeyboard.h"\n\n'    
+	+ 'void typeKey(int key)\n'
+    + '{\n'
+	+ '  DigiKeyboard.sendKeyStroke(key);\n'
+    + '  //Keyboard.press(key);\n'
+    + '  //delay(50);\n'
+    + '  //Keyboard.release(key);\n'
+    + '}\n\n'
     + '\n'
     + 'void setup()\n'
     + '{\n'
@@ -289,7 +297,11 @@ class Dckuinojs {
           {
             commandKnown = true;
             // Replace the DuckyScript key by the Arduino key name
-            parsedOut += '  typeKey(\'' + keyMap[wordArray[0]] + '\');\n';
+            //parsedOut += '  typeKey(\'' + keyMap[wordArray[0]] + '\');\n';
+			//2018 gg64
+            //parsedOut += '  DigiKeyboard.sendKeyStroke(\'' + keyMap[wordArray[0]] + '\');\n';
+            parsedOut += '  DigiKeyboard.sendKeyStroke(' + keyMap[wordArray[0]] + ');\n';
+			
           } else {
             console.error('Error: Unknown letter \'' + wordArray[0] +'\' at line: ' + (i + 1));
             return;
@@ -358,14 +370,26 @@ class Dckuinojs {
             {
               commandKnown = true;
 
-              parsedOut += '  typeKey(' + comboMap[wordArray[0]] + ');\n';
+              //parsedOut += '  typeKey(' + comboMap[wordArray[0]] + ');\n';
+			  //2018 gg64
+              //parsedOut += '  DigiKeyboard.sendKeyStroke(' + comboMap[wordArray[0]] + ');\n';
+              parsedOut += '  DigiKeyboard.sendKeyStroke(0,' + comboMap[wordArray[0]] + ');\n';
+			  parsedOut +='  DigiKeyboard.sendKeyStroke(0);'
             }else if (commandMap[wordArray[0]] !== undefined) {
               commandKnown = true;
 				
 				//gg64d
               //parsedOut += '  typeKeyLOL(' + commandMap[wordArray[0]] + ');\n';
-			  parsedOut += '  DigiKeyboard.sendKeyStroke(' + commandMap[wordArray[0]] + ');\n';
-			  
+			  // 2018
+			  //parsedOut += '  DigiKeyboard.sendKeyStroke(' + commandMap[wordArray[0]] + ');\n';
+			  if(commandMap[wordArray[0]] === 'MODIFIERKEY_LEFT_GUI'){
+				  //added by gg64 otherwise it just can't work
+				parsedOut += '  DigiKeyboard.sendKeyStroke(0,' + commandMap[wordArray[0]] + ');\n';
+			  }
+			  else{
+				parsedOut += '  DigiKeyboard.sendKeyStroke(' + commandMap[wordArray[0]] + ');\n';
+			  }
+			  //parsedOut += '  DigiKeyboard.sendKeyStroke(' + commandMap[wordArray[0]] + ');\n';
             }else {
               commandKnown = false;
               break;

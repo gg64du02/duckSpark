@@ -1,5 +1,13 @@
-
-# TODO: (the sequence on the keyboard to input in the keyboard) Make the custom payload discovered (multiOS 7 8 10) public (no spoiler ;) )
+# TODO: Add mini wiki page about the possible use of the script languge which
+ based on the https://github.com/hak5darren/USB-Rubber-Ducky/wiki/Duckyscript
+ and check how to do it threre : https://github.com/Seytonic/malduino
+ 
+ # TODO :  Delays needs to be shorter without in the multiOS 7 8 10 admin command prompt script
+ 
+ #TODO: Fix the STRING command, try to replace the DigiKeyboard.println() by something that
+ does not insert \n or \r
+  
+# TODO: (the sequence on the keyboard to input) Make the custom payload discovered (multiOS 7 8 10) public (no spoiler ;) )
 
 # TODO: Make the custom payload discovered (multiOS) public (no spoiler ;) )
 
@@ -13,4 +21,18 @@
 # TODO: take a look a that: https://gist.github.com/yoggy/731613
 
 
+
+#=============================================================
 # DONE: (the Ino) Make the custom payload discovered (multiOS: 7 8 10) public (no spoiler ;) )
+
+# DONE: A lot of fixing mainly focused to get the 7_8_10.txt converted properly
+
+# DONE: fix 
+  DigiKeyboard.sendKeyStroke(0,MODIFIERKEY_LEFT_GUI); is ok
+  DigiKeyboard.sendKeyStroke(MODIFIERKEY_LEFT_GUI); is not ok (give an e);
+
+  DigiKeyboard.sendKeyStroke(0,BACKSPACE); is not ok
+  DigiKeyboard.sendKeyStroke(BACKSPACE); is  ok
+  
+  maybe in DigiKeyboard.h ?
+  https://github.com/Tranquilite0/Teensy-Keyboard/blob/master/usb_keyboard.h
