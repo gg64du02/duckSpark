@@ -1,3 +1,5 @@
+# TODO: add more keyboard key support from the script language (modify both duckSpark.js and DigiKeyboard.h)
+
 # TODO: Add mini wiki page about the possible use of the script language which
  based on the https://github.com/hak5darren/USB-Rubber-Ducky/wiki/Duckyscript
  and check how to do it threre : https://github.com/Seytonic/malduino
