@@ -1,9 +1,7 @@
-# TODO: check for teensy german french keyboard support (emaultion)
+# TODO: check for teensy german french keyboard support (emaultion) english too ?
 https://github.com/FrankBoesing/cores/blob/master/teensy/keylayouts.h
 
 # TODO: test the multiOS script on 8.0
-
-# TODO: add more keyboard key support from the script language (modify both duckSpark.js and DigiKeyboard.h)
 
 # TODO: Add mini wiki page about the possible use of the script language which
  based on the https://github.com/hak5darren/USB-Rubber-Ducky/wiki/Duckyscript
@@ -46,3 +44,6 @@ https://github.com/FrankBoesing/cores/blob/master/teensy/keylayouts.h
   https://github.com/Tranquilite0/Teensy-Keyboard/blob/master/usb_keyboard.h
   
 # DONE: (the sequence on the keyboard to input) Make the custom payload discovered (multiOS 7 8 10) public (no spoiler ;) )
+# BETTER KEYBOARD support for French
+
+# DONE: add more keyboard key support from the script language (modify both duckSpark.js and DigiKeyboard.h)
