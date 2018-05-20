@@ -1,3 +1,8 @@
+# TODO: check for teensy german french keyboard support (emaultion)
+https://github.com/FrankBoesing/cores/blob/master/teensy/keylayouts.h
+
+# TODO: test the multiOS script on 8.0
+
 # TODO: add more keyboard key support from the script language (modify both duckSpark.js and DigiKeyboard.h)
 
 # TODO: Add mini wiki page about the possible use of the script language which
