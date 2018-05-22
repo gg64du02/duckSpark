@@ -43,6 +43,32 @@ You have to change files at the specified location.
 
 https://github.com/hak5darren/USB-Rubber-Ducky/wiki/Payloads
 
+
+## duckSpark Script Command List
+
+This converter should (most of) support Rubber ducky commands.
+See: https://github.com/hak5darren/USB-Rubber-Ducky/wiki/Duckyscript
+
+
+|									Modifier Keys								|
+| ----------------------------------------------------------------------------- |
+|  ESCAPE, ESC, GUI, WINDOWS, COMMAND, MENU, APP, END, SPACE, TAB, PRINTSCREEN, |
+|  ENTER, RETURN, UPARROW, DOWNARROW, LEFTARROW, RIGHTARROW, UP, DOWN, LEFT, 	|
+|  RIGHT, CAPSLOCK, DELETE, DEL, F1-F12, PAGEUP, PAGEDOWN, BACKSPACE			|
+
+|			Keys			|
+| ------------------------- |
+| a - z						|
+| A - Z						|
+| 0 - 9						|
+
+
+|			Command			|			Description				|
+| ------------------------- | --------------------------------- |
+| REM						| Comment							|
+| STRING					| Types the following string 		|
+| GUI						| Windows or CMD key				|
+
 ##Disclaimer:
 
 Use it for educationnal purpose, be responsible please.
@@ -69,3 +95,10 @@ Nurrl:
 
 https://github.com/Nurrl/Duckuino
 
+hak5darren:
+
+https://github.com/hak5darren/USB-Rubber-Ducky
+
+FrankBoesing:
+
+https://github.com/FrankBoesing/cores
