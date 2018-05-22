@@ -23,7 +23,12 @@
 # TODO: take a look at that: https://gist.github.com/acspike/1022059
 # TODO: take a look a that: https://gist.github.com/yoggy/731613
 
-# TODO: add a score number to notify the user his script is to long, therefore not be able to run on the DigiSpark!!!
+# TODO: add a score number to notify the user that his script is to long, therefore not be able to run on the DigiSpark!!!
+w/ proper stylesheet ?
+# TODO: See the memory threshold when it happens.
+# TODO: Try to came a with a single array generation during code translation (duckSpark.js)
+maybe it will save the lenght issue ?!?
+
 
 #=============================================================
 # DONE: (the Ino) Make the custom payload discovered (multiOS: 7 8 10) public (no spoiler ;) )
