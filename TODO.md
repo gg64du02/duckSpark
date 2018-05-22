@@ -1,8 +1,4 @@
 
-
-# TODO: Fix the STRING command, try to replace the DigiKeyboard.println() by something that
- does not insert \n or \r
- 
 # TODO: test the multiOS script on 8.0
 
 # TODO: Add mini wiki page about the possible use of the script language which
@@ -58,3 +54,6 @@ https://github.com/FrankBoesing/cores/blob/master/teensy/keylayouts.h
 # DONE: check the (scancode.h or duckSpark.js) files: why they are some missing keystroke during the tests ?
  for a better support of DigiSpakr.println for french/english (example check: Payload_WiFi_key_grabber)
  : The payload is too long ? (quite common :( ie on several scripts)
+ 
+# DONE: Fix the STRING command, try to replace the DigiKeyboard.println() by something that
+ does not insert \n or \r

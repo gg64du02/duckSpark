@@ -14,10 +14,10 @@ const unsigned char ascii_to_scan_code_table[] PROGMEM = {
   // /* ASCII:   7 */ 0,
   /* ASCII:   8 */ 42,
   /* ASCII:   9 */ 43,
-  /* ASCII:  10 */ 40,
+  /* ASCII:  10 */ 0,//former value 40 (which is the Enter key) LN should be LF
   /* ASCII:  11 */ 0,
   /* ASCII:  12 */ 0,
-  /* ASCII:  13 */ 0,
+  /* ASCII:  13 */ 0,//13 should be CR
   /* ASCII:  14 */ 0,
   /* ASCII:  15 */ 0,
   /* ASCII:  16 */ 0,
