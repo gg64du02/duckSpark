@@ -1,6 +1,11 @@
-# TODO: check for teensy german french keyboard support (emaultion) english too ?
-https://github.com/FrankBoesing/cores/blob/master/teensy/keylayouts.h
 
+
+# TODO: check the (scancode.h or duckSpark.js) files: why they are some missing keystroke during the tests ?
+ for a better support of DigiSpakr.println for french/english (example check: Payload_WiFi_key_grabber)
+
+# TODO: Fix the STRING command, try to replace the DigiKeyboard.println() by something that
+ does not insert \n or \r
+ 
 # TODO: test the multiOS script on 8.0
 
 # TODO: Add mini wiki page about the possible use of the script language which
@@ -8,11 +13,6 @@ https://github.com/FrankBoesing/cores/blob/master/teensy/keylayouts.h
  and check how to do it threre : https://github.com/Seytonic/malduino
  
 # TODO: Delays needs to be shorter without changing functionnality in the multiOS 7 8 10 admin command prompt script
- 
-# TODO: Fix the STRING command, try to replace the DigiKeyboard.println() by something that
- does not insert \n or \r
-
-# TODO: take a typical end result screenshots for each OS for the multiOS script
 
 # TODO: test code generation with other payloads on the hak5 githib https://github.com/hak5darren/USB-Rubber-Ducky/wiki/Payloads
  
@@ -47,3 +47,8 @@ https://github.com/FrankBoesing/cores/blob/master/teensy/keylayouts.h
 # BETTER KEYBOARD support for French
 
 # DONE: add more keyboard key support from the script language (modify both duckSpark.js and DigiKeyboard.h)
+
+# DONE: take a typical end result screenshots for each OS for the multiOS script
+
+# DONE: check for teensy keyboard support (emulation) english too ?
+https://github.com/FrankBoesing/cores/blob/master/teensy/keylayouts.h
