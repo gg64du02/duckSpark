@@ -1,8 +1,5 @@
 
 
-# TODO: check the (scancode.h or duckSpark.js) files: why they are some missing keystroke during the tests ?
- for a better support of DigiSpakr.println for french/english (example check: Payload_WiFi_key_grabber)
-
 # TODO: Fix the STRING command, try to replace the DigiKeyboard.println() by something that
  does not insert \n or \r
  
@@ -26,7 +23,7 @@
 # TODO: take a look at that: https://gist.github.com/acspike/1022059
 # TODO: take a look a that: https://gist.github.com/yoggy/731613
 
-
+# TODO: add a score number to notify the user his script is to long, therefore not be able to run on the DigiSpark!!!
 
 #=============================================================
 # DONE: (the Ino) Make the custom payload discovered (multiOS: 7 8 10) public (no spoiler ;) )
@@ -52,3 +49,7 @@
 
 # DONE: check for teensy keyboard support (emulation) english too ?
 https://github.com/FrankBoesing/cores/blob/master/teensy/keylayouts.h
+
+# DONE: check the (scancode.h or duckSpark.js) files: why they are some missing keystroke during the tests ?
+ for a better support of DigiSpakr.println for french/english (example check: Payload_WiFi_key_grabber)
+ : The payload is too long ? (quite common :( ie on several scripts)
