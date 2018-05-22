@@ -33,17 +33,17 @@ var commandMap = { // Key that can be typed
   //WINDOWS:'MOD_GUI_LEFT',	//ok
   COMMAND:'MODIFIERKEY_GUI',	//ok
   MENU:'KEY_MENU',
-  APP:'229',
+  APP:'KEY_MENU',
   END:'KEY_END',
   SPACE:'KEY_SPACE',	//ok
   TAB:'KEY_TAB',
-  PRINTSCREEN:'206',
+  PRINTSCREEN:'KEY_PRINTSCREEN',
   ENTER:'KEY_ENTER',	//ok
   RETURN:'KEY_ENTER',	//ok
-  UPARROW:'UPARROW',
-  DOWNARROW:'DOWNARROW',
-  LEFTARROW:'LEFTARROW',
-  RIGHTARROW:'RIGHTARROW',
+  UPARROW:'KEY_UP_ARROW',
+  DOWNARROW:'KEY_DOWN_ARROW',
+  LEFTARROW:'KEY_LEFT_ARROW',
+  RIGHTARROW:'KEY_RIGHT_ARROW',
   UP:'KEY_UP_ARROW',
   DOWN:'KEY_DOWN_ARROW',
   LEFT:'KEY_LEFT_ARROW',
@@ -65,7 +65,7 @@ var commandMap = { // Key that can be typed
   F12:'KEY_F12',	//ok
   PAGEUP:'KEY_PAGE_UP',
   PAGEDOWN:'KEY_PAGE_DOWN',
-  BACKSPACE:'BACKSPACE'//added by gg
+  BACKSPACE:'KEY_BACKSPACE'//added by gg
 };
 
 /*
@@ -383,7 +383,7 @@ class Dckuinojs {
               //parsedOut += '  typeKeyLOL(' + commandMap[wordArray[0]] + ');\n';
 			  // 2018
 			  //parsedOut += '  DigiKeyboard.sendKeyStroke(' + commandMap[wordArray[0]] + ');\n';
-			  if(commandMap[wordArray[0]] === 'MODIFIERKEY_LEFT_GUI'){
+			  if(commandMap[wordArray[0]] === 'MOD_GUI_LEFT'){
 				  //added by gg64 otherwise it just can't work
 				parsedOut += '  DigiKeyboard.sendKeyStroke(0,' + commandMap[wordArray[0]] + ');\n';
 			  }

@@ -50,7 +50,7 @@ This converter should (most of) support Rubber ducky commands.
 See: https://github.com/hak5darren/USB-Rubber-Ducky/wiki/Duckyscript
 
 
-|									Modifier Keys								|
+|							Command/Modifier Keys								|
 | ----------------------------------------------------------------------------- |
 |  ESCAPE, ESC, GUI, WINDOWS, COMMAND, MENU, APP, END, SPACE, TAB, PRINTSCREEN, |
 |  ENTER, RETURN, UPARROW, DOWNARROW, LEFTARROW, RIGHTARROW, UP, DOWN, LEFT, 	|
@@ -69,7 +69,7 @@ See: https://github.com/hak5darren/USB-Rubber-Ducky/wiki/Duckyscript
 | STRING					| Types the following string 		|
 | GUI						| Windows or CMD key				|
 
-##Disclaimer:
+## Disclaimer:
 
 Use it for educationnal purpose, be responsible please.
 I don't endorse any misbehavior for using it.

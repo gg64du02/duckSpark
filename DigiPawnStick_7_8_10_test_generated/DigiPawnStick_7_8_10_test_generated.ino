@@ -25,7 +25,7 @@ void setup()
   DigiKeyboard.delay(3500);
 
   // win
-  DigiKeyboard.sendKeyStroke(0,MODIFIERKEY_LEFT_GUI);
+  DigiKeyboard.sendKeyStroke(0,MOD_GUI_LEFT);
 
   DigiKeyboard.delay(4000);
 
@@ -51,7 +51,7 @@ void setup()
   DigiKeyboard.delay(2000);
 
   // BACKSPACE
-  DigiKeyboard.sendKeyStroke(BACKSPACE);
+  DigiKeyboard.sendKeyStroke(KEY_BACKSPACE);
 
   DigiKeyboard.delay(2000);
 
@@ -66,7 +66,7 @@ void setup()
   DigiKeyboard.delay(2000);
 
   // DOWNARROW
-  DigiKeyboard.sendKeyStroke(DOWNARROW);
+  DigiKeyboard.sendKeyStroke(KEY_DOWN_ARROW);
 
   DigiKeyboard.delay(2000);
 
@@ -76,12 +76,12 @@ void setup()
   DigiKeyboard.delay(2000);
 
   // LEFTARROW
-  DigiKeyboard.sendKeyStroke(LEFTARROW);
+  DigiKeyboard.sendKeyStroke(KEY_LEFT_ARROW);
 
   DigiKeyboard.delay(2000);
 
   // LEFTARROW
-  DigiKeyboard.sendKeyStroke(LEFTARROW);
+  DigiKeyboard.sendKeyStroke(KEY_LEFT_ARROW);
 
   DigiKeyboard.delay(2000);
 
@@ -93,7 +93,7 @@ void setup()
   DigiKeyboard.delay(2000);
 
   // LEFTARROW
-  DigiKeyboard.sendKeyStroke(LEFTARROW);
+  DigiKeyboard.sendKeyStroke(KEY_LEFT_ARROW);
 
   DigiKeyboard.delay(2000);
 
@@ -112,12 +112,12 @@ void setup()
   DigiKeyboard.delay(2000);
 
   // UPARROW
-  DigiKeyboard.sendKeyStroke(UPARROW);
+  DigiKeyboard.sendKeyStroke(KEY_UP_ARROW);
 
   DigiKeyboard.delay(2000);
 
   // UPARROW
-  DigiKeyboard.sendKeyStroke(UPARROW);
+  DigiKeyboard.sendKeyStroke(KEY_UP_ARROW);
 
   DigiKeyboard.delay(2000);
 
