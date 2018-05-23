@@ -1,10 +1,8 @@
 
-# TODO: check out this http://digistump.com/board/index.php/topic,894.0.html 
-to see if there is something to do (or already done)
-# TODO: Make it deployment friendly for a website (I don't know if it currently works)
-
 # TODO: test the multiOS script on 8.0
  
+# TODO: Make it deployment friendly for a website (I don't know if it currently works)
+
 # TODO: Delays needs to be shorter without changing functionnality in the
  multiOS 7 8 10 admin command prompt script
 
@@ -14,6 +12,9 @@ w/ proper stylesheet ?
 # TODO: See the memory threshold when it happens.
 # TODO: Try to came a with a single array generation during code translation (duckSpark.js)
 maybe it will save the lenght issue ?!?
+
+# TODO: check support of this below string for french keyboard
+DigiKeyboard.println("abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890ß ü+öä#,.- !"X$%&/()=? Ü*ÖÄ';:_ {[]}\~ <>| @§ ^´``");
 
 # =============================================================
 # DONE: (the Ino) Make the custom payload discovered (multiOS: 7 8 10) public (no spoiler ;) )
@@ -62,6 +63,11 @@ https://github.com/FrankBoesing/cores/blob/master/teensy/keylayouts.h
 # DONE: Try to correct name of files in the repository without "breaking" them ie the code converter
 
 # DONE: remove .download from the names
+
+# DONE: check out this http://digistump.com/board/index.php/topic,894.0.html 
+to see if there is something to do (or already done)
+DigiKeyboard.println("abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890 !\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~~");
+is fine
  
 # =============================================================
 
