@@ -72,76 +72,6 @@ const PROGMEM char usbHidReportDescriptor[USB_CFG_HID_REPORT_DESCRIPTOR_LENGTH] 
 #define MOD_SHIFT_RIGHT     (1<<5)
 #define MOD_ALT_RIGHT       (1<<6)
 #define MOD_GUI_RIGHT       (1<<7)
-/*
-#define KEY_A       20
-#define KEY_B       5
-#define KEY_C       6
-#define KEY_D       7
-#define KEY_E       8
-#define KEY_F       9
-#define KEY_G       10
-#define KEY_H       11
-#define KEY_I       12
-#define KEY_J       13
-#define KEY_K       14
-#define KEY_L       15
-#define KEY_M       51
-#define KEY_N       17
-#define KEY_O       18
-#define KEY_P       19
-#define KEY_Q       4
-#define KEY_R       21
-#define KEY_S       22
-#define KEY_T       23
-#define KEY_U       24
-#define KEY_V       25
-#define KEY_W       29
-#define KEY_X       27
-#define KEY_Y       28
-#define KEY_Z       26
-#define KEY_1       30
-#define KEY_2       31
-#define KEY_3       32
-#define KEY_4       33
-#define KEY_5       34
-#define KEY_6       35
-#define KEY_7       36
-#define KEY_8       37
-#define KEY_9       38
-#define KEY_0       39
-
-#define KEY_ENTER   40
-
-#define KEY_SPACE   44
-
-#define KEY_F1      58
-#define KEY_F2      59
-#define KEY_F3      60
-#define KEY_F4      61
-#define KEY_F5      62
-#define KEY_F6      63
-#define KEY_F7      64
-#define KEY_F8      65
-#define KEY_F9      66
-#define KEY_F10     67
-#define KEY_F11     68
-#define KEY_F12     69
-
-/*
-//previous code
-
-#define LEFTARROW 0x50
-#define RIGHTARROW 0x4F
-#define UPARROW  0x52
-#define DOWNARROW    0x51
-
-#define MODIFIERKEY_LEFT_GUI ( 0x08 | 0xE000 )
-
-#define KEY_MENU ( 101  | 0xF000 )
-
-#define BACKSPACE 42
-*/
-
 
 #define MODIFIERKEY_CTRL        ( 0x01 | 0xE000 )
 #define MODIFIERKEY_SHIFT       ( 0x02 | 0xE000 )
@@ -175,45 +105,6 @@ const PROGMEM char usbHidReportDescriptor[USB_CFG_HID_REPORT_DESCRIPTOR_LENGTH] 
 #define KEY_MEDIA_MUTE          ( 0xE2 | 0xE400 )
 #define KEY_MEDIA_VOLUME_INC    ( 0xE9 | 0xE400 )
 #define KEY_MEDIA_VOLUME_DEC    ( 0xEA | 0xE400 )
-/*
-//From teensy
-#define KEY_A                   (   4  | 0xF000 )
-#define KEY_B                   (   5  | 0xF000 )
-#define KEY_C                   (   6  | 0xF000 )
-#define KEY_D                   (   7  | 0xF000 )
-#define KEY_E                   (   8  | 0xF000 )
-#define KEY_F                   (   9  | 0xF000 )
-#define KEY_G                   (  10  | 0xF000 )
-#define KEY_H                   (  11  | 0xF000 )
-#define KEY_I                   (  12  | 0xF000 )
-#define KEY_J                   (  13  | 0xF000 )
-#define KEY_K                   (  14  | 0xF000 )
-#define KEY_L                   (  15  | 0xF000 )
-#define KEY_M                   (  16  | 0xF000 )
-#define KEY_N                   (  17  | 0xF000 )
-#define KEY_O                   (  18  | 0xF000 )
-#define KEY_P                   (  19  | 0xF000 )
-#define KEY_Q                   (  20  | 0xF000 )
-#define KEY_R                   (  21  | 0xF000 )
-#define KEY_S                   (  22  | 0xF000 )
-#define KEY_T                   (  23  | 0xF000 )
-#define KEY_U                   (  24  | 0xF000 )
-#define KEY_V                   (  25  | 0xF000 )
-#define KEY_W                   (  26  | 0xF000 )
-#define KEY_X                   (  27  | 0xF000 )
-#define KEY_Y                   (  28  | 0xF000 )
-#define KEY_Z                   (  29  | 0xF000 )
-#define KEY_1                   (  30  | 0xF000 )
-#define KEY_2                   (  31  | 0xF000 )
-#define KEY_3                   (  32  | 0xF000 )
-#define KEY_4                   (  33  | 0xF000 )
-#define KEY_5                   (  34  | 0xF000 )
-#define KEY_6                   (  35  | 0xF000 )
-#define KEY_7                   (  36  | 0xF000 )
-#define KEY_8                   (  37  | 0xF000 )
-#define KEY_9                   (  38  | 0xF000 )
-#define KEY_0                   (  39  | 0xF000 )
-*/
 
 #define KEY_ENTER               (  40  | 0xF000 )
 #define KEY_ESC                 (  41  | 0xF000 )
@@ -305,48 +196,7 @@ const PROGMEM char usbHidReportDescriptor[USB_CFG_HID_REPORT_DESCRIPTOR_LENGTH] 
 #define KEY_RIGHT_ALT	MODIFIERKEY_RIGHT_ALT
 #define KEY_RIGHT_GUI	MODIFIERKEY_RIGHT_GUI
 
-
-
 //###########################################################
-/*
-//From teensy
-#define KEY_A                   (   4  | 0xF000 )
-#define KEY_B                   (   5  | 0xF000 )
-#define KEY_C                   (   6  | 0xF000 )
-#define KEY_D                   (   7  | 0xF000 )
-#define KEY_E                   (   8  | 0xF000 )
-#define KEY_F                   (   9  | 0xF000 )
-#define KEY_G                   (  10  | 0xF000 )
-#define KEY_H                   (  11  | 0xF000 )
-#define KEY_I                   (  12  | 0xF000 )
-#define KEY_J                   (  13  | 0xF000 )
-#define KEY_K                   (  14  | 0xF000 )
-#define KEY_L                   (  15  | 0xF000 )
-#define KEY_M                   (  16  | 0xF000 )
-#define KEY_N                   (  17  | 0xF000 )
-#define KEY_O                   (  18  | 0xF000 )
-#define KEY_P                   (  19  | 0xF000 )
-#define KEY_Q                   (  20  | 0xF000 )
-#define KEY_R                   (  21  | 0xF000 )
-#define KEY_S                   (  22  | 0xF000 )
-#define KEY_T                   (  23  | 0xF000 )
-#define KEY_U                   (  24  | 0xF000 )
-#define KEY_V                   (  25  | 0xF000 )
-#define KEY_W                   (  26  | 0xF000 )
-#define KEY_X                   (  27  | 0xF000 )
-#define KEY_Y                   (  28  | 0xF000 )
-#define KEY_Z                   (  29  | 0xF000 )
-#define KEY_1                   (  30  | 0xF000 )
-#define KEY_2                   (  31  | 0xF000 )
-#define KEY_3                   (  32  | 0xF000 )
-#define KEY_4                   (  33  | 0xF000 )
-#define KEY_5                   (  34  | 0xF000 )
-#define KEY_6                   (  35  | 0xF000 )
-#define KEY_7                   (  36  | 0xF000 )
-#define KEY_8                   (  37  | 0xF000 )
-#define KEY_9                   (  38  | 0xF000 )
-#define KEY_0                   (  39  | 0xF000 )
-*/
 
 //From the former code
 #define KEY_A       20
@@ -462,16 +312,9 @@ const PROGMEM char usbHidReportDescriptor[USB_CFG_HID_REPORT_DESCRIPTOR_LENGTH] 
 #define KEY_F23                 ( 114  | 0xF000 )
 #define KEY_F24                 ( 115  | 0xF000 )
 
-
-
-
-
 //===============================================
 //===============================================
 //===============================================
-
-
-
 
 #define SHIFT_MASK		0x0040
 #define ALTGR_MASK		0x0080

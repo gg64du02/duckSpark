@@ -1,36 +1,17 @@
 /*
  *  Dckuino.js, an open source project licenced under MIT License
+ *  Based on Dckuino.js, an open source project licenced under MIT License
+ *  Modified by gg64du02
  */
- 
- //TODO
-/*
-//fixed: remove 
-	Keyboard.presscommandMap(KEY_LEFT_GUI);
-	Keyboard.presskeyMap('r');
-fixed: change keyMap
-done: add the led start to show when it's done
-todo: change command map
-	#define MOD_CONTROL_LEFT    (1<<0)
-	#define MOD_SHIFT_LEFT      (1<<1)
-	#define MOD_ALT_LEFT        (1<<2)
-	#define MOD_GUI_LEFT        (1<<3)
-	#define MOD_CONTROL_RIGHT   (1<<4)
-	#define MOD_SHIFT_RIGHT     (1<<5)
-	#define MOD_ALT_RIGHT       (1<<6)
-	#define MOD_GUI_RIGHT       (1<<7)
-todo: check out https://github.com/hak5darren/USB-Rubber-Ducky/wiki/Duckyscript
-
-*/
 
 /* jshint esversion: 6 */
+
 
 var commandMap = { // Key that can be typed
   ESCAPE:'KEY_LEFT_ESC',
   ESC:'KEY_LEFT_ESC',
   GUI:'MOD_GUI_LEFT',	//ok
-  //WINDOWS:'MOD_GUI_LEFT',	//ok
   WINDOWS:'MOD_GUI_LEFT',	//ok
-  //WINDOWS:'MOD_GUI_LEFT',	//ok
   COMMAND:'MODIFIERKEY_GUI',	//ok
   MENU:'KEY_MENU',
   APP:'KEY_MENU',
@@ -68,48 +49,6 @@ var commandMap = { // Key that can be typed
   BACKSPACE:'KEY_BACKSPACE'//added by gg
 };
 
-/*
-var commandMap = { // Key that can be typed
-  ESCAPE:'KEY_LEFT_ESC',
-  ESC:'KEY_LEFT_ESC',
-  GUI:'KEY_LEFT_GUI',
-  WINDOWS:'KEY_LEFT_GUI',
-  COMMAND:'KEY_LEFT_GUI',
-  MENU:'229',
-  APP:'229',
-  END:'KEY_END',
-  SPACE:'\' \'',
-  TAB:'KEY_TAB',
-  PRINTSCREEN:'206',
-  ENTER:'KEY_RETURN',
-  RETURN:'KEY_RETURN',
-  UPARROW:'KEY_UP_ARROW',
-  DOWNARROW:'KEY_DOWN_ARROW',
-  LEFTARROW:'KEY_LEFT_ARROW',
-  RIGHTARROW:'KEY_RIGHT_ARROW',
-  UP:'KEY_UP_ARROW',
-  DOWN:'KEY_DOWN_ARROW',
-  LEFT:'KEY_LEFT_ARROW',
-  RIGHT:'KEY_RIGHT_ARROW',
-  CAPSLOCK:'KEY_CAPS_LOCK',
-  DELETE:'KEY_DELETE',
-  DEL:'KEY_DELETE',
-  F1:'KEY_F1',
-  F2:'KEY_F2',
-  F3:'KEY_F3',
-  F4:'KEY_F4',
-  F5:'KEY_F5',
-  F6:'KEY_F6',
-  F7:'KEY_F7',
-  F8:'KEY_F8',
-  F9:'KEY_F9',
-  F10:'KEY_F10',
-  F11:'KEY_F11',
-  F12:'KEY_F12',
-  PAGEUP:'KEY_PAGE_UP',
-  PAGEDOWN:'KEY_PAGE_DOWN'
-};
-*/
 
 var comboMap = { // Key that can only be used in combos
   ALT:'MOD_ALT_LEFT',
@@ -118,14 +57,6 @@ var comboMap = { // Key that can only be used in combos
   CONTROL:'MOD_CONTROL_LEFT' //former: KEY_LEFT_CTRL
 };
 
-/*
-var comboMap = { // Key that can only be used in combos
-  ALT:'KEY_LEFT_ALT',
-  SHIFT:'KEY_LEFT_SHIFT',
-  CTRL:'KEY_LEFT_CTRL',
-  CONTROL:'KEY_LEFT_CTRL'
-};
-*/
 
 var keyMap = { // Normal keys
   a:'KEY_A',
@@ -181,14 +112,8 @@ class Dckuinojs {
     return '/*\n'
     + ' * Generated with <3 by Dckuino.js, an open source project ! Please check the Nurrl github, and style sheet from Seytonic`s website Modified by gg64du02\n'
     + ' */\n\n'
-    + '#include "DigiKeyboard.h"\n\n'    
-	+ 'void typeKey(int key)\n'
-    + '{\n'
-	+ '  DigiKeyboard.sendKeyStroke(key);\n'
-    + '  //Keyboard.press(key);\n'
-    + '  //delay(50);\n'
-    + '  //Keyboard.release(key);\n'
-    + '}\n\n'
+    + '#include "DigiKeyboard.h"\n\n'
+	+ '\n\n'
     + '\n'
     + 'void setup()\n'
     + '{\n'
@@ -298,9 +223,7 @@ class Dckuinojs {
           {
             commandKnown = true;
             // Replace the DuckyScript key by the Arduino key name
-            //parsedOut += '  typeKey(\'' + keyMap[wordArray[0]] + '\');\n';
-			//2018 gg64
-            //parsedOut += '  DigiKeyboard.sendKeyStroke(\'' + keyMap[wordArray[0]] + '\');\n';
+			// type a command/modifiers key
             parsedOut += '  DigiKeyboard.sendKeyStroke(' + keyMap[wordArray[0]] + ');\n';
 			
           } else {
@@ -371,26 +294,18 @@ class Dckuinojs {
             {
               commandKnown = true;
 
-              //parsedOut += '  typeKey(' + comboMap[wordArray[0]] + ');\n';
-			  //2018 gg64
-              //parsedOut += '  DigiKeyboard.sendKeyStroke(' + comboMap[wordArray[0]] + ');\n';
               parsedOut += '  DigiKeyboard.sendKeyStroke(0,' + comboMap[wordArray[0]] + ');\n';
 			  parsedOut +='  DigiKeyboard.sendKeyStroke(0);'
             }else if (commandMap[wordArray[0]] !== undefined) {
               commandKnown = true;
-				
-				//gg64d
-              //parsedOut += '  typeKeyLOL(' + commandMap[wordArray[0]] + ');\n';
-			  // 2018
-			  //parsedOut += '  DigiKeyboard.sendKeyStroke(' + commandMap[wordArray[0]] + ');\n';
 			  if(commandMap[wordArray[0]] === 'MOD_GUI_LEFT'){
-				  //added by gg64 otherwise it just can't work
+				  //to get the windows press key alone if you need to.
 				parsedOut += '  DigiKeyboard.sendKeyStroke(0,' + commandMap[wordArray[0]] + ');\n';
+				
 			  }
 			  else{
 				parsedOut += '  DigiKeyboard.sendKeyStroke(' + commandMap[wordArray[0]] + ');\n';
 			  }
-			  //parsedOut += '  DigiKeyboard.sendKeyStroke(' + commandMap[wordArray[0]] + ');\n';
             }else {
               commandKnown = false;
               break;
@@ -408,35 +323,25 @@ class Dckuinojs {
             {
               commandKnown = true;
               releaseAll = true;
-				//gg64du02
-
-				//parsedOut += '  Keyboard.presscomboMap(' + comboMap[wordArray[0]] + ');\n';
-				
 				tmpStringGG = ',' + comboMap[wordArray[0]] + tmpStringGG + ');\n';
-				console.log(tmpStringGG);
+				//gg64du02: debugging purpose
+				//console.log(tmpStringGG);
 				//parsedOut += '  Keyboard.press(' + comboMap[wordArray[0]] + comboMap[wordArray[1]] + ');\n';
 			  
             }else if (commandMap[wordArray[0]] !== undefined) {
               commandKnown = true;
               releaseAll = true;
-				//gg64du02
-
-               
-				//parsedOut += '  Keyboard.presscommandMap(' + commandMap[wordArray[0]] + ');\n';
-				
 				tmpStringGG = ',' + commandMap[wordArray[0]] + ');\n';
-				console.log(tmpStringGG);
+				//gg64du02: debugging purpose
+				//console.log(tmpStringGG);
 				//parsedOut += '  Keyboard.press(' + commandMap[wordArray[0]] + commandMap[wordArray[1] + ');\n';
 				
             }else if (keyMap[wordArray[0]] !== undefined) {
               commandKnown = true;
               releaseAll = true;
-				//gg64du02
-				
-				//parsedOut += '  Keyboard.presskeyMap(\'' + keyMap[wordArray[0]] + '\');\n';
-				//tmpStringGG = keyMap[wordArray[0]] + ');\n';
 				tmpStringGG = '  DigiKeyboard.sendKeyStroke(' + keyMap[wordArray[0]] + tmpStringGG;
-				console.log(tmpStringGG);
+				//gg64du02: debugging purpose
+				//console.log(tmpStringGG);
 				//parsedOut += '  Keyboard.press(\'' + keyMap[wordArray[0]] + keyMap[wordArray[0]] + '\');\n';
 				
             }else {
@@ -447,7 +352,6 @@ class Dckuinojs {
 			 if (keyMap[wordArray[0]] !== undefined) {
 				parsedOut += tmpStringGG;
 			 }
-			 //todo: check if contains DigiKeyboard
 			 
 			 if (comboMap[wordArray[0]] !== undefined) {
 				 var substring = 'DigiKeyboard';
@@ -459,37 +363,6 @@ class Dckuinojs {
             
 			wordArray.shift();
 			
-			
-			/*
-			  
-            if (comboMap[wordArray[0]] !== undefined)
-            {
-              commandKnown = true;
-              releaseAll = true;
-				//gg64du02
-              parsedOut += '  Keyboard.presscomboMap(' + comboMap[wordArray[0]] + ');\n';
-              //parsedOut += '  Keyboard.press(' + comboMap[wordArray[0]] + comboMap[wordArray[1]] + ');\n';
-            }else if (commandMap[wordArray[0]] !== undefined) {
-              commandKnown = true;
-              releaseAll = true;
-				//gg64du02
-
-              parsedOut += '  Keyboard.presscommandMap(' + commandMap[wordArray[0]] + ');\n';
-              //parsedOut += '  Keyboard.press(' + commandMap[wordArray[0]] + commandMap[wordArray[1] + ');\n';
-            }else if (keyMap[wordArray[0]] !== undefined) {
-              commandKnown = true;
-              releaseAll = true;
-
-				//gg64du02
-              parsedOut += '  Keyboard.presskeyMap(\'' + keyMap[wordArray[0]] + '\');\n';
-              //parsedOut += '  Keyboard.press(\'' + keyMap[wordArray[0]] + keyMap[wordArray[0]] + '\');\n';
-            }else {
-              commandKnown = false;
-              break;
-            }
-            wordArray.shift();
-			*/
-			
           }
       }
 
@@ -498,12 +371,6 @@ class Dckuinojs {
         console.error('Error: Unknown command or key \'' + wordArray[0] + '\' at line: ' + (i + 1) + '.');
         return;
       }
-
-      // If we need to release keys, we do
-	  /*
-      if (releaseAll)
-        parsedOut += '  Keyboard.releaseAll();\n';
-	*/
 
       parsedScript += parsedOut; // Add what we parsed
       parsedScript += '\n'; // Add new line

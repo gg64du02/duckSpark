@@ -1,14 +1,14 @@
 
-# TODO: test the multiOS script on 8.0
- 
-# TODO: Delays needs to be shorter without changing functionnality in the
- multiOS 7 8 10 admin command prompt script
-
-# TODO: Clean the useless comments (in the code converter)
 # TODO: Tried to correct name of files in the repository without "breaking" them ie the code converter
 # TODO: check out this http://digistump.com/board/index.php/topic,894.0.html 
 to see if there is something to do (or already done)
 # TODO: Make it deployment friendly for a website (I don't know if it currently works)
+
+
+# TODO: test the multiOS script on 8.0
+ 
+# TODO: Delays needs to be shorter without changing functionnality in the
+ multiOS 7 8 10 admin command prompt script
 
 # TODO: add a score number to notify the user that his script is to long, 
 therefore not be able to run on the DigiSpark!!!
@@ -58,7 +58,9 @@ https://github.com/FrankBoesing/cores/blob/master/teensy/keylayouts.h
 
 # DONE: take a look at that: https://gist.github.com/acspike/1022059
 # DONE: take a look a that: https://gist.github.com/yoggy/731613
--> teensy constant are enough
+-> teensy constants are enough
+
+# DONE: Clean the useless comments (in the code converter)
  
 # =============================================================
 
