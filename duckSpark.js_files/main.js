@@ -58,7 +58,7 @@ jQuery(function() { // Wait for jQuery
   });
 
   // Fill filename area
-  $("#dl-filename").val("duckSpark.js-" + makeId(4));
+  $("#dl-filename").val("duckSpark.js" + makeId(4));
 
   // Download button
   $("#start-dl").click(function() {

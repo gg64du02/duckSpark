@@ -3,22 +3,17 @@
 to see if there is something to do (or already done)
 # TODO: Make it deployment friendly for a website (I don't know if it currently works)
 
-
 # TODO: test the multiOS script on 8.0
  
 # TODO: Delays needs to be shorter without changing functionnality in the
  multiOS 7 8 10 admin command prompt script
 
-# TODO: remove .download from the names
- 
 # TODO: add a score number to notify the user that his script is to long, 
 therefore not be able to run on the DigiSpark!!!
 w/ proper stylesheet ?
 # TODO: See the memory threshold when it happens.
 # TODO: Try to came a with a single array generation during code translation (duckSpark.js)
 maybe it will save the lenght issue ?!?
-
-
 
 # =============================================================
 # DONE: (the Ino) Make the custom payload discovered (multiOS: 7 8 10) public (no spoiler ;) )
@@ -65,6 +60,8 @@ https://github.com/FrankBoesing/cores/blob/master/teensy/keylayouts.h
 # DONE: Clean the useless comments (in the code converter)
 
 # DONE: Try to correct name of files in the repository without "breaking" them ie the code converter
+
+# DONE: remove .download from the names
  
 # =============================================================
 
