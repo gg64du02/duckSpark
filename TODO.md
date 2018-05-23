@@ -1,5 +1,3 @@
-
-# TODO: test the multiOS script on 8.0
  
 # TODO: Make it deployment friendly for a website (I don't know if it currently works)
 
@@ -68,6 +66,8 @@ https://github.com/FrankBoesing/cores/blob/master/teensy/keylayouts.h
 to see if there is something to do (or already done)
 DigiKeyboard.println("abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890 !\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~~");
 is fine
+
+# DONE: test the multiOS script on 8.0 professionnal
  
 # =============================================================
 
