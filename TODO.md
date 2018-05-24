@@ -1,8 +1,11 @@
 
+# TODO: See the memory threshold when it happens.
+use: https://stackoverflow.com/questions/4009756/how-to-count-string-occurrence-in-string
+
+
 # TODO: add a score number to notify the user that his script is to long, 
 therefore not be able to run on the DigiSpark!!!
 w/ proper stylesheet ?
-# TODO: See the memory threshold when it happens.
 
 # TODO: Make it deployment friendly for a website (I don't know if it currently works)
 

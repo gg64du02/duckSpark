@@ -87,6 +87,12 @@ var keyMap = { // Normal keys
   z:'KEY_Z'
 };
 
+
+	
+//gg64du02
+//debugger purpose
+var numbers_of_character = 0;
+
 class Dckuinojs {
   constructor() {
     this.keyMap = keyMap;
@@ -108,7 +114,33 @@ class Dckuinojs {
     {
       return false;
     }  // Returning the total uploadable script
-
+	
+	//parsedDucky;
+	//gg64du02
+	//use: https://stackoverflow.com/questions/4009756/how-to-count-string-occurrence-in-string
+	//How to count string occurrence in string?
+	var temp = "This is a string.";
+	var count = (temp.match(/is/g) || []).length;
+	console.log("count:"+count);
+	
+	
+	console.log("DigiKeyboard.h:"+"1");
+	console.log("setup:"+"1");
+	console.log("pinmode:"+"2");
+	
+	var count = (parsedDucky.match(/DigiKeyboard.delay/g) || []).length;
+	console.log("delay:"+count);
+	
+	var count = (parsedDucky.match(/DigiKeyboard.sendKeyStroke/g) || []).length;
+	console.log("sendKeyStroke:"+count);
+	
+	var count = (parsedDucky.match(/DigiKeyboard.println/g) || []).length;
+	console.log("println:"+count);
+	
+	
+	console.log("numbers_of_character (println):"+numbers_of_character);
+	
+	
     return '/*\n'
     + ' * Generated with <3 by Dckuino.js, an open source project ! Please check the Nurrl github, and style sheet from Seytonic`s website Modified by gg64du02\n'
     + ' */\n\n'
@@ -147,6 +179,10 @@ class Dckuinojs {
 
     // Cuting the input in lines
     var lineArray = toParse.split('\n');
+	
+	//gg64du02
+	//debugger purpose
+	numbers_of_character = 0;
 
     // Loop every line
     for (var i = 0; i < lineArray.length; i++)
@@ -189,6 +225,9 @@ class Dckuinojs {
           {
             parsedOut += '  DigiKeyboard.println("' + textString + '");\n';
             commandKnown = true;
+			//gg64du02
+			//debugger purpose
+			numbers_of_character = numbers_of_character + textString.length;
           } else {
             console.error('Error: at line: ' + (i + 1) + ', STRING needs a text');
             return;
