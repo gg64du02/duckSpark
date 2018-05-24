@@ -1,13 +1,14 @@
- 
-# TODO: Make it deployment friendly for a website (I don't know if it currently works)
-
-# TODO: Delays needs to be shorter without changing functionnality in the
- multiOS 7 8 10 admin command prompt script
 
 # TODO: add a score number to notify the user that his script is to long, 
 therefore not be able to run on the DigiSpark!!!
 w/ proper stylesheet ?
 # TODO: See the memory threshold when it happens.
+
+# TODO: Make it deployment friendly for a website (I don't know if it currently works)
+
+# TODO: Delays needs to be shorter without changing functionnality in the
+ multiOS 7 8 10 admin command prompt script
+
 # TODO: Try to came a with a single array generation during code translation (duckSpark.js)
 maybe it will save the lenght issue ?!?
 
@@ -68,6 +69,9 @@ DigiKeyboard.println("abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234
 is fine
 
 # DONE: test the multiOS script on 8.0 professionnal
+
+# DONE: change the links inside the webpage 
+
  
 # =============================================================
 
