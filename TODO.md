@@ -1,7 +1,6 @@
 
-# TODO: add a score number to notify the user that his script is to long, 
-therefore not be able to run on the DigiSpark!!!
-w/ proper stylesheet ?
+
+# TODO:Add an info button next to it when the RAM usage guess is RED.
 
 # TODO: Make it deployment friendly for a website (I don't know if it currently works)
 
@@ -74,7 +73,10 @@ is fine
 # DONE: See the memory threshold when it happens.
 use: https://stackoverflow.com/questions/4009756/how-to-count-string-occurrence-in-string
 
- 
+# TODO: add a score number to notify the user that his script is to long, 
+therefore not be able to run on the DigiSpark!!!
+w/ proper stylesheet ?
+
 # =============================================================
 
 # DON'T/CAN'T DO IT: multiOS script on 7 would change back the keyboard layout settings to the primary one set in 7

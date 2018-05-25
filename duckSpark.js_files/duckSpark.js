@@ -98,6 +98,7 @@ class Dckuinojs {
     this.keyMap = keyMap;
     this.commandMap = commandMap;
     this.comboMap = comboMap;
+	this.numbers_of_character;
   }
 
   toArduino(inputCode)
@@ -128,17 +129,28 @@ class Dckuinojs {
 	console.log("setup:"+"1");
 	console.log("pinmode:"+"2");
 	
-	var count = (parsedDucky.match(/DigiKeyboard.delay/g) || []).length;
-	console.log("delay:"+count);
+	var count_delay = (parsedDucky.match(/DigiKeyboard.delay/g) || []).length;
+	console.log("delay:"+count_delay);
+	var count_delay_corrected  = count_delay+1;
 	
-	var count = (parsedDucky.match(/DigiKeyboard.sendKeyStroke/g) || []).length;
-	console.log("sendKeyStroke:"+count);
+	var count_sendKeyStroke = (parsedDucky.match(/DigiKeyboard.sendKeyStroke/g) || []).length;
+	console.log("sendKeyStroke:"+count_sendKeyStroke);
 	
-	var count = (parsedDucky.match(/DigiKeyboard.println/g) || []).length;
-	console.log("println:"+count);
+	var count_println = (parsedDucky.match(/DigiKeyboard.println/g) || []).length;
+	console.log("println:"+count_println);
 	
 	
 	console.log("numbers_of_character (println):"+numbers_of_character);
+	
+	var test_RAM_used = 88 + 0 * count_delay_corrected + 0* count_sendKeyStroke;
+	//test_RAM_used += 2* count_println + 1* numbers_of_character;
+	test_RAM_used += 0* count_println + 1* numbers_of_character;
+	console.log("test_RAM_used:"+test_RAM_used)
+	this.numbers_of_character = test_RAM_used;
+	
+	  
+	//$(".RAM-inf").val("duckSpark.js" + "lol");
+	//document.getElementById('RAM-inf').innerHTML = 'John Doe';
 	
 	
     return '/*\n'

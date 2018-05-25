@@ -1,0 +1,62 @@
+ide:
+Les variables globales utilisent 1414 octets de mémoire dynamique.
+test_RAM_used:1476
+
+	var test_RAM_used = 88 + 0 * count_delay_corrected + 0* count_sendKeyStroke;
+	test_RAM_used += 2* count_println + 1* numbers_of_character;
+================
+
+Les variables globales utilisent 1414 octets de mémoire dynamique.
+test_RAM_used:1452
+
+var test_RAM_used = 88 + 0 * count_delay_corrected + 0* count_sendKeyStroke;
+test_RAM_used += 1* count_println + 1* numbers_of_character;
+=================
+Les variables globales utilisent 1414 octets de mémoire dynamique.
+var test_RAM_used = 88 + 0 * count_delay_corrected + 0* count_sendKeyStroke;
+test_RAM_used += 0* count_println + 1* numbers_of_character;
+
+count:2
+main.js:16 DigiKeyboard.h:1
+main.js:16 setup:1
+main.js:16 pinmode:2
+main.js:16 delay:6
+main.js:16 sendKeyStroke:26
+main.js:16 println:24
+main.js:16 numbers_of_character (println):1340
+main.js:16 test_RAM_used:1428
+
+
+=========================
+
+Le croquis utilise 3380 octets (56%) de l'espace de stockage de programmes. Le maximum est de 6012 octets.
+Les variables globales utilisent 232 octets de mémoire dynamique.
+
+count:2
+main.js:16 DigiKeyboard.h:1
+main.js:16 setup:1
+main.js:16 pinmode:2
+main.js:16 delay:7
+main.js:16 sendKeyStroke:7
+main.js:16 println:6
+main.js:16 numbers_of_character (println):137
+main.js:16 test_RAM_used:225
+
+var test_RAM_used = 88 + 0 * count_delay_corrected + 0* count_sendKeyStroke;
+test_RAM_used += 0* count_println + 1* numbers_of_character;
+
+
+=========================
+
+
+Le croquis utilise 3282 octets (54%) de l'espace de stockage de programmes. Le maximum est de 6012 octets.
+Les variables globales utilisent 170 octets de mémoire dynamique.
+count:2
+main.js:16 DigiKeyboard.h:1
+main.js:16 setup:1
+main.js:16 pinmode:2
+main.js:16 delay:6
+main.js:16 sendKeyStroke:6
+main.js:16 println:4
+main.js:16 numbers_of_character (println):82
+main.js:16 test_RAM_used:170
