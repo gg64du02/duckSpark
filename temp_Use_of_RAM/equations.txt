@@ -1,0 +1,382 @@
+DigiKeyboard.h:1
+setup:1
+pinmode:2
+
+delay:3+1
+sendKeyStroke:39
+println:35
+numbers_of_character(println):501
+NO
+4244 octets prog 70%
+588 global
+"XMAS full"
+
+=================================
+DigiKeyboard.h:1
+setup:1
+pinmode:2
+
+delay:2+1
+sendKeyStroke:27
+println:26
+numbers_of_character (println):408
+NO
+3946 prog 65%
+486 global
+"XMAS until STRING And All Through"
+
+=================================
+count:2
+DigiKeyboard.h:1
+setup:1
+pinmode:2
+
+delay:2+1
+sendKeyStroke:27
+println:25
+numbers_of_character (println):393
+YES
+3920 octets prog (65%)
+470 octets global
+"XMAS chistmas + enter"
+
+=================================
+count:2
+DigiKeyboard.h:1
+setup:1
+pinmode:2
+
+delay:2+1
+sendKeyStroke:26
+println:25
+numbers_of_character (println):393
+YES
+3912 octets (65%) prog
+470 octets global
+"XMAS chistmas"
+
+=================================
+count:2
+DigiKeyboard.h:1
+setup:1
+pinmode:2
+
+delay:0+1
+sendKeyStroke:0
+println:44
+numbers_of_character (println):44
+YES
+Le croquis utilise 3488 octets (58%) de l'espace de stockage de programmes. Le maximum est de 6012 octets.
+Les variables globales utilisent 90 octets de mémoire dynamique.
+STRING a
+
+===================================
+count:2
+DigiKeyboard.h:1
+setup:1
+pinmode:2
+
+delay:0+1
+sendKeyStroke:0
+println:176
+numbers_of_character (println):176
+YES
+Le croquis utilise 4808 octets (79%) de l'espace de stockage de programmes. Le maximum est de 6012 octets.
+Les variables globales utilisent 90 octets de mémoire dynamique.
+========================================
+Le croquis utilise 6568 octets (109%) de l'espace de stockage de programmes. Le maximum est de 6012 octets.
+Les variables globales utilisent 90 octets de mémoire dynamique.
+PAS DE CROQUIS
+Le croquis utilise 6568 octets (109%) de l'espace de stockage de programmes. Le maximum est de 6012 octets.
+Les variables globales utilisent 90 octets de mémoire dynamique.
+count:2
+DigiKeyboard.h:1
+setup:1
+pinmode:2
+
+delay:0+1
+sendKeyStroke:0
+println:352
+
+=========================================
+count:2
+DigiKeyboard.h:1
+setup:1m
+pinmode:2
+
+delay:0+1
+sendKeyStroke:0
+println:322
+numbers_of_character (println):322
+Le croquis utilise 6268 octets (104%) de l'espace de stockage de programmes. Le maximum est de 6012 octets.
+Les variables globales utilisent 90 octets de mémoire dynamique.
+Croquis trop gros ; vois http://www.arduino.cc/en/Guide/Troubleshooting#size pour des conseils de réduction.
+Erreur de compilation pour la carte Digispark (Default - 16.5mhz)
+==========================================
+count:2
+DigiKeyboard.h:1
+setup:1
+pinmode:2
+
+delay:0+1
+sendKeyStroke:0
+println:289
+numbers_of_character (println):289
+YES
+Le croquis utilise 5938 octets (98%) de l'espace de stockage de programmes. Le maximum est de 6012 octets.
+Les variables globales utilisent 90 octets de mémoire dynamique.
+Running Digispark Uploader...
+Plug in device now... (will timeout in 60 seconds)
+=========================================
+wifi grabber (full)
+count:2
+main.js:16 DigiKeyboard.h:1
+main.js:16 setup:1
+main.js:16 pinmode:2
+
+main.js:16 delay:6+1
+main.js:16 sendKeyStroke:26
+main.js:16 println:24
+main.js:16 numbers_of_character (println):1340
+NO
+Le croquis utilise 4888 octets (81%) de l'espace de stockage de programmes. Le maximum est de 6012 octets.
+Les variables globales utilisent 1414 octets de mémoire dynamique.
+==================================
+wifi grabber
+"
+STRING for /f "tokens=2 delims=: "  %a in ('findstr " Authentication"  a') do set c=%a
+ENTER
+"
+count:2
+main.js:16 DigiKeyboard.h:1
+main.js:16 setup:1
+main.js:16 pinmode:2
+
+main.js:16 delay:4+1
+main.js:16 sendKeyStroke:8
+main.js:16 println:6
+main.js:16 numbers_of_character (println):498
+NO
+Le croquis utilise 3694 octets (61%) de l'espace de stockage de programmes. Le maximum est de 6012 octets.
+Les variables globales utilisent 564 octets de mémoire dynamique.
+======================================
+wifi grabber 
+"
+STRING for /f "tokens=2 delims=: "  %a in ('findstr " Authentication"  a') do set c=%a
+"
+count:2
+main.js:16 DigiKeyboard.h:1
+main.js:16 setup:1
+main.js:16 pinmode:2
+
+main.js:16 delay:4+1
+main.js:16 sendKeyStroke:7
+main.js:16 println:6
+main.js:16 numbers_of_character (println):498
+NO
+Le croquis utilise 3686 octets (61%) de l'espace de stockage de programmes. Le maximum est de 6012 octets.
+Les variables globales utilisent 564 octets de mémoire dynamique.
+======================================
+wifi grabber
+"
+STRING for /f "tokens=3 delims=: "  %a in ('findstr "Network type"  a') do set b=%a
+ENTER
+"
+count:2
+main.js:16 DigiKeyboard.h:1
+main.js:16 setup:1
+main.js:16 pinmode:2
+
+main.js:16 delay:4+1
+main.js:16 sendKeyStroke:7
+main.js:16 println:5
+main.js:16 numbers_of_character (println):415
+NO
+Le croquis utilise 3596 octets (59%) de l'espace de stockage de programmes. Le maximum est de 6012 octets.
+Les variables globales utilisent 484 octets de mémoire dynamique.
+==================================
+wifi grabber
+"
+STRING for /f "tokens=3 delims=: "  %a in ('findstr "Network type"  a') do set b=%a
+"
+lines in 2ms
+main.js:16 count:2
+main.js:16 DigiKeyboard.h:1
+main.js:16 setup:1
+main.js:16 pinmode:2
+
+main.js:16 delay:4+1
+main.js:16 sendKeyStroke:6
+main.js:16 println:5
+main.js:16 numbers_of_character (println):415
+yes ? NO
+Le croquis utilise 3592 octets (59%) de l'espace de stockage de programmes. Le maximum est de 6012 octets.
+Les variables globales utilisent 484 octets de mémoire dynamique.
+=====================================
+18 ENTER
+count:2
+main.js:16 DigiKeyboard.h:1
+main.js:16 setup:1
+main.js:16 pinmode:2
+
+main.js:16 delay:0+1
+main.js:16 sendKeyStroke:18
+main.js:16 println:0
+main.js:16 numbers_of_character (println):0
+YES
+Le croquis utilise 3110 octets (51%) de l'espace de stockage de programmes. Le maximum est de 6012 octets.
+Les variables globales utilisent 88 octets de mémoire dynamique.
+===================================
+STRING jdbanofbhezoihfojnSIOJSBNKOJbnbnsdklSNIKbnikbnkmjnvkhvbkbvsLJHSVNKLSDJBHVCKJBklmjvMKvjbdsvkhbsvksdvbkmjsvmbkb<kh<vbkvjb<vkmjbv<kj<vbk<jvb<vkmb<vk<x
+
+count:2
+main.js:16 DigiKeyboard.h:1
+main.js:16 setup:1
+main.js:16 pinmode:2
+
+main.js:16 delay:0+1
+main.js:16 sendKeyStroke:0
+main.js:16 println:1
+main.js:16 numbers_of_character (println):147
+YES
+Le croquis utilise 3204 octets (53%) de l'espace de stockage de programmes. Le maximum est de 6012 octets.
+Les variables globales utilisent 236 octets de mémoire dynamique.
+=====================================
+
+STRING jdbanofbhezoihfojnSIOJSBNKOJbnbnsdklSNIKbnikbnkmjnvkhvbkbvsLJHSVNKLSDJBHVCKJBklmjvMKvjbdsvkhbsvksdvbkmjsvmbkb<kh<vbkvjb<vkmjbv<kj<vbk<jvb<vkmb<vk<xhkgPKFHPIUGFIPQGFQPIQHGOIPQHQVPHUQHQVPIHQIPOHOUHROËHGjdbanofbhezoihfojnSIOJSBNKOJbnbnsdklSNIKbnikbnkmjnvkhvbkbvsLJHSVNKLSDJBHVCKJBklmjvMKvjbdsvkhbsvksdvbkmjsvmbkb<kh<vbkvjb<vkmjbv<kj<vbk<jvb<vkmb<vk<xhkgPKFHPIUGFIPQGFQPIQHGOIPQHQVPHUQHQVPIHQIPOHOUHROËHG
+
+count:2
+main.js:16 DigiKeyboard.h:1
+main.js:16 setup:1
+main.js:16 pinmode:2
+
+main.js:16 delay:0+1
+main.js:16 sendKeyStroke:0
+main.js:16 println:1
+main.js:16 numbers_of_character (println):400
+NO
+Le croquis utilise 3460 octets (57%) de l'espace de stockage de programmes. Le maximum est de 6012 octets.
+Les variables globales utilisent 492 octets de mémoire dynamique.
+======================================
+STRING jdbanofbhezoihfojnSIOJSBNKOJbnbnsdklSNIKbnikbnkmjnvkhvbkbvsLJHSVNKLSDJBHVCKJBklmjvMKvjbdsvkhbsvksdvbkmjsvmbkb<kh<vbkvjb<vkmjbv<kj<vbk<jvb<vkmb<vk<xhkgPKFHPIUGFIPQGFQPIQHGOIPQHQVPHUQHQVPIHQIPOHOUHROËHGjdbanofbhezoihfojnSIOJSBNKOJbnbnsdklSNIKbnikbnkmjnvkhvbkbvsLJHSVNKLSDJBHVCKJBklmjvMKvjbdsvkhbsvksdvbkmjsvmbkb<kh<vbkvjb<vkmjbv<kj<vbk<jvb<vkmb<vk<xhkgPKFHPIUGFIPQGFQPIQHGOIPQHQVPHUQHQVPIHQIPOHOUHRO
+
+count:2
+main.js:16 DigiKeyboard.h:1
+main.js:16 setup:1
+main.js:16 pinmode:2
+
+main.js:16 delay:0+1
+main.js:16 sendKeyStroke:0
+main.js:16 println:1
+main.js:16 numbers_of_character (println):397
+NO
+Le croquis utilise 3456 octets (57%) de l'espace de stockage de programmes. Le maximum est de 6012 octets.
+Les variables globales utilisent 488 octets de mémoire dynamique.
+=======================================
+(objectif 470 !!!)
+STRING jdbanofbhezoihfojnSIOJSBNKOJbnbnsdklSNIKbnikbnkmjnvkhvbkbvsLJHSVNKLSDJBHVCKJBklmjvMKvjbdsvkhbsvksdvbkmjsvmbkb<kh<vbkvjb<vkmjbv<kj<vbk<jvb<vkmb<vk<xhkgPKFHPIUGFIPQGFQPIQHGOIPQHQVPHUQHQVPIHQIPOHOUHROËHGjdbanofbhezoihfojnSIOJSBNKOJbnbnsdklSNIKbnikbnkmjnvkhvbkbvsLJHSVNKLSDJBHVCKJBklmjvMKvjbdsvkhbsvksdvbkmjsvmbkb<kh<vbkvjb<vkmjbv<kj<vbk<jvb<vkmb<vk<xhkgPKFHPIUGFIPQGFQPIQHGOIPQHQVPHUQHQVPIHQIPOHOU
+
+count:2
+main.js:16 DigiKeyboard.h:1
+main.js:16 setup:1
+main.js:16 pinmode:2
+
+main.js:16 delay:0+1
+main.js:16 sendKeyStroke:0
+main.js:16 println:1
+main.js:16 numbers_of_character (println):394
+NO
+Le croquis utilise 3452 octets (57%) de l'espace de stockage de programmes. Le maximum est de 6012 octets.
+Les variables globales utilisent 484 octets de mémoire dynamique.
+=========================================
+476 global NO
+==========================================
+470 global NO
+==========================================
+STRING jdbanofbhezoihfojnSIOJSBNKOJbnbnsdklSNIKbnikbnkmjnvkhvbkbvsLJHSVNKLSDJBHVCKJBklmjvMKvjbdsvkhbsvksdvbkmjsvmbkb<kh<vbkvjb<vkmjbv<kj<vbk<jvb<vkmb<vk<xhkgPKFHPIUGFIPQGFQPIQHGOIPQHQVPHUQHQVPIHQIPOHOUHROËHGjdbanofbhezoihfojnSIOJSBNKOJbnbnsdklSNIKbnikbnkmjnvkhvbkbvsLJHSVNKLSDJBHVCKJBklmjvMKvjbdsvkhbsvksdvbkmjsvmbkb<kh<vbkvjb<vkmjbv<kj<vbk<jvb<vkmb<vk<xhkg
+
+count:2
+main.js:16 DigiKeyboard.h:1
+main.js:16 setup:1
+main.js:16 pinmode:2
+
+main.js:16 delay:0+1
+main.js:16 sendKeyStroke:0
+main.js:16 println:1
+main.js:16 numbers_of_character (println):350
+YES
+Le croquis utilise 3408 octets (56%) de l'espace de stockage de programmes. Le maximum est de 6012 octets.
+Les variables globales utilisent 440 octets de mémoire dynamique.
+==========================================
+objectif: 455
+452 YES global
+==========================================
+458 YES global
+==========================================
+464 NO global
+==========================================
+461 NO global
+==========================================
+460 YES MAXIMUM ?
+==========================================
+finalement environ 460 en ram ? 234 236 470
+==========================================
+===========================================
+STRING jdbanofbhezoihfojnSIOJSBNKOJbnbnsdklSNIKbnikbnkmjnvkhvbkbvsLJHSVNKLSDJBHVCKJBklmjvMKvjbdsvkhbsvksdvbkmjsvmbkb<kh<vbkvjb<vkmjbv<kj<vbk<jvb<vkmb<vk<xhkgPKFHPIUGFIPQGFQPIQHGOIPQHQVPHUQHQVPIHQIPOHOUHROËHGjdbanofbhezoihfojnSIOJSBNKOJbnbnsdklSNIKbnikbnkmjnvkhvbkbvsLJHSVNKLSDJBHVCKJBklmjvMKvjbdsvkhbsvksdvbkmjsvmbkb<kh<vbkvjb<vkmjbv<kj<vbk<jvb<vkmb<vk<xhkgazertyazertyazertya
+
+
+count:2
+main.js:16 DigiKeyboard.h:1
+main.js:16 setup:1
+main.js:16 pinmode:2
+
+main.js:16 delay:0+1
+main.js:16 sendKeyStroke:0
+main.js:16 println:1
+main.js:16 numbers_of_character (println):369
+YES
+Le croquis utilise 3428 octets (57%) de l'espace de stockage de programmes. Le maximum est de 6012 octets.
+Les variables globales utilisent 460 octets de mémoire dynamique.
+============================================
+DELAY 1000
+count:2
+main.js:16 DigiKeyboard.h:1
+main.js:16 setup:1
+main.js:16 pinmode:2
+main.js:16 delay:1
+main.js:16 sendKeyStroke:0
+main.js:16 println:0
+main.js:16 numbers_of_character (println):0
+YES
+
+Le croquis utilise 2972 octets (49%) de l'espace de stockage de programmes. Le maximum est de 6012 octets.
+Les variables globales utilisent 88 octets de mémoire dynamique.
+===========================================
+DELAY 1000
+STRING A
+DELAY 1000
+STRING A
+
+count:2
+main.js:16 DigiKeyboard.h:1
+main.js:16 setup:1
+main.js:16 pinmode:2
+main.js:16 delay:2
+main.js:16 sendKeyStroke:0
+main.js:16 println:2
+main.js:16 numbers_of_character (println):2
+
+Le croquis utilise 3088 octets (51%) de l'espace de stockage de programmes. Le maximum est de 6012 octets.
+Les variables globales utilisent 90 octets de mémoire dynamique.
+
+====================================-
+
+
+
+
+
+
+
+
+
+

@@ -1,8 +1,4 @@
 
-# TODO: See the memory threshold when it happens.
-use: https://stackoverflow.com/questions/4009756/how-to-count-string-occurrence-in-string
-
-
 # TODO: add a score number to notify the user that his script is to long, 
 therefore not be able to run on the DigiSpark!!!
 w/ proper stylesheet ?
@@ -74,6 +70,9 @@ is fine
 # DONE: test the multiOS script on 8.0 professionnal
 
 # DONE: change the links inside the webpage 
+
+# DONE: See the memory threshold when it happens.
+use: https://stackoverflow.com/questions/4009756/how-to-count-string-occurrence-in-string
 
  
 # =============================================================
