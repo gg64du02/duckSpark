@@ -1,4 +1,7 @@
 
+# TODO: try most scripts available with hak5's payloads
+
+# TODO: make a video about it ?
 
 # TODO:Add an info button next to it when the RAM usage guess is RED.
 
@@ -12,6 +15,8 @@ maybe it will save the lenght issue ?!?
 
 # TODO: check support of this below string for french keyboard
 DigiKeyboard.println("abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890ß ü+öä#,.- !"X$%&/()=? Ü*ÖÄ';:_ {[]}\~ <>| @§ ^´``");
+
+# TODO: make a more accurate predection of RAM use
 
 # =============================================================
 # DONE: (the Ino) Make the custom payload discovered (multiOS: 7 8 10) public (no spoiler ;) )
