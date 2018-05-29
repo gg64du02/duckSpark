@@ -122,30 +122,30 @@ class Dckuinojs {
 	//How to count string occurrence in string?
 	var temp = "This is a string.";
 	var count = (temp.match(/is/g) || []).length;
-	console.log("count:"+count);
+	//console.log("count:"+count);
 	
 	
-	console.log("DigiKeyboard.h:"+"1");
-	console.log("setup:"+"1");
-	console.log("pinmode:"+"2");
+	// console.log("DigiKeyboard.h:"+"1");
+	// console.log("setup:"+"1");
+	// console.log("pinmode:"+"2");
 	
 	var count_delay = (parsedDucky.match(/DigiKeyboard.delay/g) || []).length;
-	console.log("delay:"+count_delay);
+	//console.log("delay:"+count_delay);
 	var count_delay_corrected  = count_delay+1;
 	
 	var count_sendKeyStroke = (parsedDucky.match(/DigiKeyboard.sendKeyStroke/g) || []).length;
-	console.log("sendKeyStroke:"+count_sendKeyStroke);
+	// console.log("sendKeyStroke:"+count_sendKeyStroke);
 	
 	var count_println = (parsedDucky.match(/DigiKeyboard.println/g) || []).length;
-	console.log("println:"+count_println);
+	// console.log("println:"+count_println);
 	
 	
-	console.log("numbers_of_character (println):"+numbers_of_character);
+	// console.log("numbers_of_character (println):"+numbers_of_character);
 	
 	var test_RAM_used = 88 + 0 * count_delay_corrected + 0* count_sendKeyStroke;
 	//test_RAM_used += 2* count_println + 1* numbers_of_character;
 	test_RAM_used += 0* count_println + 1* numbers_of_character;
-	console.log("test_RAM_used:"+test_RAM_used)
+	// console.log("test_RAM_used:"+test_RAM_used)
 	this.numbers_of_character = test_RAM_used;
 	
 	  
@@ -419,6 +419,7 @@ class Dckuinojs {
 
       if (!commandKnown)
       {
+        // console.error("\n" + "123" + "\n" + 'Error: Unknown command or key \'' + wordArray[0] + '\' at line: ' + (i + 1) + '.');
         console.error('Error: Unknown command or key \'' + wordArray[0] + '\' at line: ' + (i + 1) + '.');
         return;
       }
@@ -430,7 +431,7 @@ class Dckuinojs {
     var timerEnd = Date.now();
     var timePassed = new Date(timerEnd - timerStart);
 
-    console.log('Done parsed ' + (lineArray.length) + ' lines in ' + timePassed.getMilliseconds() + 'ms');
+    console.log('Done parsed :' + (lineArray.length) + ' lines in ' + timePassed.getMilliseconds() + 'ms');
     return parsedScript;
   }
 }

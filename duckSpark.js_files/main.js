@@ -13,12 +13,14 @@ jQuery(function() { // Wait for jQuery
     console.log = function (message) {
       $(".console").val("  ℹ - " + message + '\n');
       $(".console").css("color", "#2b2b2b");
+      $(".console").css("padding-top","16px");
       oldLog.apply(console, arguments);
     };
     var oldErrorLog = console.error;
     console.error = function (message) {
       $(".console").val("  ⚠ - " + message + '\n');
       $(".console").css("color", "#ff3434");
+      $(".console").css("padding-top","16px");
       oldErrorLog.apply(console, arguments);
     };
   })();
@@ -30,7 +32,7 @@ jQuery(function() { // Wait for jQuery
   $(".compile-but").click(function(e) {
     var duckOutput = Duck.toArduino($(".duckyscript").val());
 	var numbers_of_character_lol = Duck.numbers_of_character;
-	console.log("numbers_of_character_lol:"+numbers_of_character_lol);
+	//console.log("numbers_of_character_lol:"+numbers_of_character_lol);
 
 	//document.getElementById("dl-but").innerHTML = "Hello JavaScript!";
 	//document.getElementById("dl-but").innerHTML = "RAM used:" + numbers_of_character_lol + "bytes (about)";
