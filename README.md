@@ -64,10 +64,13 @@ See: https://github.com/hak5darren/USB-Rubber-Ducky/wiki/Duckyscript
 
 
 |			Command			|			Description				|
-| ------------------------- | --------------------------------- |
-| REM						| Comment							|
+| ------------------------- | --------------------------------- 	|
+| REM						| Comment								|
 | STRING					| Types the following string 		|
 | GUI						| Windows or CMD key				|
+|DEFAULTDELAY 		| Time between commands			|
+| CTRL-SHIFT ENTER  | Start as administrator(windows)|
+
 
 ## Disclaimer:
 
