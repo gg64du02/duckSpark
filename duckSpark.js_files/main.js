@@ -33,17 +33,14 @@ jQuery(function() { // Wait for jQuery
     var duckOutput = Duck.toArduino($(".duckyscript").val());
 	var numbers_of_character_lol = Duck.numbers_of_character;
 	//console.log("numbers_of_character_lol:"+numbers_of_character_lol);
-
-	//document.getElementById("dl-but").innerHTML = "Hello JavaScript!";
-	//document.getElementById("dl-but").innerHTML = "RAM used:" + numbers_of_character_lol + "bytes (about)";
-	document.getElementById("RAM-info").innerHTML = "RAM used:" + numbers_of_character_lol + "bytes (raw guess)";
 	
 	if(numbers_of_character_lol>460){
 		document.getElementById("RAM-info").style.color = "#ff0000";
+		document.getElementById("RAM-info").innerHTML = "Warning, RAM used:" + numbers_of_character_lol + "bytes (raw guess)";
 	}
 	else{
 		document.getElementById("RAM-info").style.color = "#000000";
-		
+		document.getElementById("RAM-info").innerHTML = "RAM used:" + numbers_of_character_lol + "bytes (raw guess)";
 	}
 	
 	
