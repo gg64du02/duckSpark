@@ -8,7 +8,8 @@
 
 
 var commandMap = { // Key that can be typed
-  ESCAPE:'KEY_LEFT_ESC',
+  CONTROL:'MOD_CONTROL_LEFT', //former: KEY_LEFT_CTRL
+  ESCAPE:'KEY_ESC',
   ESC:'KEY_LEFT_ESC',
   GUI:'MOD_GUI_LEFT',	//ok
   WINDOWS:'MOD_GUI_LEFT',	//ok
@@ -53,6 +54,7 @@ var commandMap = { // Key that can be typed
 
 
 var comboMap = { // Key that can only be used in combos
+  //ESCAPE:'KEY_LEFT_ESC',
   ALT:'MOD_ALT_LEFT',
   SHIFT:'MOD_SHIFT_LEFT',
   CTRL:'MOD_CONTROL_LEFT',
@@ -61,6 +63,7 @@ var comboMap = { // Key that can only be used in combos
 
 
 var keyMap = { // Normal keys
+  //ESCAPE:'KEY_LEFT_ESC',
   a:'KEY_A',
   b:'KEY_B',
   c:'KEY_C',
@@ -375,14 +378,46 @@ class Dckuinojs {
 			 //gg64du02 2018
 			console.log("wordArray[0]:"+wordArray[0]);
 			console.log("wordArray[1]:"+wordArray[1]);
-            if (comboMap[wordArray[0]] !== undefined)
+			console.log("comboMap[wordArray[0]]:"+comboMap[wordArray[0]]);
+			console.log("comboMap[wordArray[1]]:"+comboMap[wordArray[1]]);
+			console.log("commandMap[wordArray[0]]:"+commandMap[wordArray[0]]);
+			console.log("commandMap[wordArray[1]]:"+commandMap[wordArray[1]]);
+			console.log("wordArray.length:"+wordArray.length);
+			
+			if (comboMap[wordArray[0]] !== undefined)
             {
-              commandKnown = true;
-              releaseAll = true;
-				tmpStringGG = ',' + comboMap[wordArray[0]] + tmpStringGG + ');\n';
-				//gg64du02: debugging purpose
-				//console.log(tmpStringGG);
-				//parsedOut += '  Keyboard.press(' + comboMap[wordArray[0]] + comboMap[wordArray[1]] + ');\n';
+				
+				if(wordArray.length == 2){
+					 if ( ((wordArray[0] == 'CONTROL')|(wordArray[0] == 'CTRL')) &  ((wordArray[1] == 'ESC')|(wordArray[1] == 'ESCAPE')) ){
+						//comboMap
+						//commandMap
+						commandKnown = true;
+						releaseAll = true;
+						//console.log("test");
+						tmpStringGG = '';
+						tmpStringGG = '  DigiKeyboard.sendKeyStroke('+commandMap[wordArray[1]] ;
+						tmpStringGG = tmpStringGG+ ', ' + comboMap[wordArray[0]] +');\n';
+						//parsedOut += tmpStringGG;
+					 }
+					 else{
+						//do nothing
+						commandKnown = true;
+						releaseAll = true;
+						tmpStringGG = ',' + comboMap[wordArray[0]] + tmpStringGG + ');\n';
+						//gg64du02: debugging purpose
+						//console.log(tmpStringGG);
+						//parsedOut += '  Keyboard.press(' + comboMap[wordArray[0]] + comboMap[wordArray[1]] + ');\n';
+					 }
+				}
+				else{
+					//do nothing
+				  commandKnown = true;
+				  releaseAll = true;
+					tmpStringGG = ',' + comboMap[wordArray[0]] + tmpStringGG + ');\n';
+					//gg64du02: debugging purpose
+					//console.log(tmpStringGG);
+					//parsedOut += '  Keyboard.press(' + comboMap[wordArray[0]] + comboMap[wordArray[1]] + ');\n';
+				}
 			  
             }else if (commandMap[wordArray[0]] !== undefined) {
               commandKnown = true;
@@ -410,7 +445,17 @@ class Dckuinojs {
 				console.log(',MODIFIERKEY_LEFT_CTRL_LEFT_SHIFT');
 				
 				parsedOut += tmpStringGG;
-
+			
+			/* }else if ( ((wordArray[0] == 'CONTROL')|(wordArray[0] == 'CTRL')) &  ((wordArray[1] == 'ESC')|(wordArray[1] == 'ESCAPE')) ){
+              //comboMap
+			  //commandMap
+			  commandKnown = true;
+              releaseAll = true;
+				console.log("test");
+				tmpStringGG = '  DigiKeyboard.sendKeyStroke('+commandMap[wordArray[1]] ;
+				tmpStringGG = tmpStringGG+ ', ' + comboMap[wordArray[0]] +');\n';
+				parsedOut += tmpStringGG;
+			*/
 			
             }else {
               commandKnown = false;
