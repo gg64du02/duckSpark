@@ -47,6 +47,8 @@ var commandMap = { // Key that can be typed
   PAGEUP:'KEY_PAGE_UP',
   PAGEDOWN:'KEY_PAGE_DOWN',
   BACKSPACE:'KEY_BACKSPACE'//added by gg
+  
+ 
 };
 
 
@@ -370,6 +372,9 @@ class Dckuinojs {
 			  //note: DigiKeyboard.sendKeyStroke(KEY_R, MOD_GUI_LEFT); //run
 			  //console.log(string.indexOf(substring) !== -1);
 			  
+			 //gg64du02 2018
+			console.log("wordArray[0]:"+wordArray[0]);
+			console.log("wordArray[1]:"+wordArray[1]);
             if (comboMap[wordArray[0]] !== undefined)
             {
               commandKnown = true;
@@ -395,6 +400,18 @@ class Dckuinojs {
 				//console.log(tmpStringGG);
 				//parsedOut += '  Keyboard.press(\'' + keyMap[wordArray[0]] + keyMap[wordArray[0]] + '\');\n';
 				
+				
+				//gg64du02
+             }else if ((wordArray[0] == 'CTRL-SHIFT')& (commandMap[wordArray[1]] !== undefined)){
+              commandKnown = true;
+              releaseAll = true;
+				tmpStringGG = '  DigiKeyboard.sendKeyStroke('+commandMap[wordArray[1]] ;
+				tmpStringGG = tmpStringGG+ ', MODIFIERKEY_LEFT_CTRL_LEFT_SHIFT);\n';
+				console.log(',MODIFIERKEY_LEFT_CTRL_LEFT_SHIFT');
+				
+				parsedOut += tmpStringGG;
+
+			
             }else {
               commandKnown = false;
               break;

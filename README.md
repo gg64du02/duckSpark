@@ -52,9 +52,9 @@ See: https://github.com/hak5darren/USB-Rubber-Ducky/wiki/Duckyscript
 
 |							Command/Modifier Keys								|
 | ----------------------------------------------------------------------------- |
-|  ESCAPE, ESC, GUI, WINDOWS, COMMAND, MENU, APP, END, SPACE, TAB, PRINTSCREEN, |
+|  ESCAPE, ESC, GUI, WINDOWS, COMMAND, MENU, APP, END, SPACE, TAB, PRINTSCREEN, 		|
 |  ENTER, RETURN, UPARROW, DOWNARROW, LEFTARROW, RIGHTARROW, UP, DOWN, LEFT, 	|
-|  RIGHT, CAPSLOCK, DELETE, DEL, F1-F12, PAGEUP, PAGEDOWN, BACKSPACE			|
+|  RIGHT, CAPSLOCK, DELETE, DEL, F1-F12, PAGEUP, PAGEDOWN, BACKSPACE, CTRL-SHIFT		|
 
 |			Keys			|
 | ------------------------- |
