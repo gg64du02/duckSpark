@@ -1,5 +1,4 @@
 
-# TODO: try most scripts available with hak5's payloads
 
 # TODO: make a video about it ?
 
@@ -85,6 +84,10 @@ w/ proper stylesheet ?
 # DONE: correcting style sheet in the error textarea and removing console message in the log area
 
 # DONE: add the support of DEFAULT_DELAY
+
+# DONE: try most scripts available with hak5's payloads
+|-> tested duckSpark.js on all of them, the 30/05/2018
+|-> some were ajusted/corrected to work with duckSpark.js (error in the script, not a converter side issue)
 
 # =============================================================
 

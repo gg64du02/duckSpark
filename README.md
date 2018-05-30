@@ -41,6 +41,8 @@ You have to change files at the specified location.
 
 ## Scripts/payload:
 
+Some of the payloads in this wiki needs to be ajusted/corrected a little in order to work properly.
+
 https://github.com/hak5darren/USB-Rubber-Ducky/wiki/Payloads
 
 
