@@ -61,7 +61,6 @@ var comboMap = { // Key that can only be used in combos
   CONTROL:'MOD_CONTROL_LEFT' //former: KEY_LEFT_CTRL
 };
 
-
 var keyMap = { // Normal keys
   //ESCAPE:'KEY_LEFT_ESC',
   a:'KEY_A',
@@ -89,9 +88,35 @@ var keyMap = { // Normal keys
   w:'KEY_W',
   x:'KEY_X',
   y:'KEY_Y',
-  z:'KEY_Z'
+  z:'KEY_Z',
+  //z:'KEY_Z'
+  A:'KEY_A',
+  B:'KEY_B',
+  C:'KEY_C',
+  D:'KEY_D',
+  E:'KEY_E',
+  F:'KEY_F',
+  G:'KEY_G',
+  H:'KEY_H',
+  I:'KEY_I',
+  J:'KEY_J',
+  K:'KEY_K',
+  L:'KEY_L',
+  M:'KEY_M',
+  N:'KEY_N',
+  O:'KEY_O',
+  P:'KEY_P',
+  Q:'KEY_Q',
+  R:'KEY_R',
+  S:'KEY_S',
+  T:'KEY_T',
+  U:'KEY_U',
+  V:'KEY_V',
+  W:'KEY_W',
+  X:'KEY_X',
+  Y:'KEY_Y',
+  Z:'KEY_Z'
 };
-
 
 	
 //gg64du02

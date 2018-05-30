@@ -1,6 +1,8 @@
 
 # TODO: try most scripts available with hak5's payloads
 
+# TODO: add the support of DEFAULT_DELAY
+
 # TODO: make a video about it ?
 
 # TODO:Add an info button next to it when the RAM usage guess is RED.
