@@ -1,8 +1,6 @@
 
 # TODO: try most scripts available with hak5's payloads
 
-# TODO: add the support of DEFAULT_DELAY
-
 # TODO: make a video about it ?
 
 # TODO:Add an info button next to it when the RAM usage guess is RED.
@@ -85,6 +83,8 @@ therefore not be able to run on the DigiSpark!!!
 w/ proper stylesheet ?
 
 # DONE: correcting style sheet in the error textarea and removing console message in the log area
+
+# DONE: add the support of DEFAULT_DELAY
 
 # =============================================================
 

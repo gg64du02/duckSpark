@@ -225,6 +225,9 @@ class Dckuinojs {
 	//gg64du02
 	//debugger purpose
 	numbers_of_character = 0;
+	
+	//gg64du02 2018
+	var param_DEFAULT_DELAY = '0';
 
     // Loop every line
     for (var i = 0; i < lineArray.length; i++)
@@ -256,6 +259,29 @@ class Dckuinojs {
 
       // Handle commands
       switch(wordOne){
+		  //DEFAULT_DELAY
+		  //gg64du02 2018
+        case "DEFAULT_DELAY":
+        case "DEFAULTDELAY":
+          wordArray.shift();
+
+          var textString = wordArray.join(' ');
+
+          // Replace all '"' by '\"' and all '\' by '\\'
+          textString = textString.split('\\').join('\\\\').split('"').join('\\"');
+          if (textString !== '')
+          {
+            //parsedOut += '  DigiKeyboard.println("' + textString + '");\n';
+            commandKnown = true;
+			param_DEFAULT_DELAY = textString;
+			//gg64du02
+			//debugger purpose
+			numbers_of_character = numbers_of_character + textString.length;
+          } else {
+            console.error('Error: at line: ' + (i + 1) + ', DEFAULT_DELAY needs a number');
+            return;
+          }
+          break;
         case "STRING":
           wordArray.shift();
 
@@ -503,6 +529,13 @@ class Dckuinojs {
 			
           }
       }
+	  
+	  //support of default delay
+	  //gg64du02
+	  console.log("param_DEFAULT_DELAY:"+param_DEFAULT_DELAY);
+	  if(parseInt(param_DEFAULT_DELAY) !==0){
+		  parsedOut +='  DigiKeyboard.delay(' + param_DEFAULT_DELAY + ');\n';
+	  }
 
       if (!commandKnown)
       {
