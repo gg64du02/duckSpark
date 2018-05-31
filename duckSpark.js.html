@@ -85,6 +85,12 @@ html {
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="https://seytonic.com/ducky/favicon.png">
     <title>duckSpark.js</title>
+	
+	<!---gg64du02-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+	<script src="./duckSpark.js_files/jquery-linedtextarea.js"></script>
+	<link href="./duckSpark.js_files/jquery-linedtextarea.css" type="text/css" rel="stylesheet" />
+	
   </head>
   <body>
     <!-- Ribbon -->
@@ -153,9 +159,29 @@ html {
 
     <!-- I/O Dckuino -->
     <div class="inout-wrapper">
+      <textarea class="inout duckyscript lined"></textarea>
+      <textarea class="inout arduino lined" readonly=""></textarea>
+	  
+	  
+	  <!-- 
       <textarea class="inout duckyscript"></textarea>
       <textarea class="inout arduino" readonly=""></textarea>
+	  
+	   -->
+	  
     </div>
+	
+	
+	<script>
+	$(function() {
+		$(".lined").linedtextarea(
+		<!-- $(".lined").linedtextarea( -->
+			{selectedLine: 1}
+		);
+	});
+	</script>
+	
+	
 
     <!-- Console I/O -->
     <div class="console-wrapper">
