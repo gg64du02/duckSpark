@@ -1,6 +1,4 @@
 
-# TODO: add line numbers in duckSpark.js
-
 # TODO: make a video about it ?
 
 # TODO:Add an info button next to it when the RAM usage guess is RED.
@@ -91,6 +89,9 @@ w/ proper stylesheet ?
 |-> some were ajusted/corrected to work with duckSpark.js (error in the script, not a converter side issue)
 
 # DONE: change the webpage's title
+
+# DONE: add line numbers in duckSpark.js
+
 
 # =============================================================
 
