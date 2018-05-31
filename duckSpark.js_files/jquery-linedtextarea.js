@@ -62,11 +62,15 @@
 			/* Turn off the wrapping of as we don't want to screw up the line numbers */
 			textarea.attr("wrap", "off");
 			textarea.css({resize:'none'});
-			var originalTextAreaWidth	= textarea.outerWidth();
+			// var originalTextAreaWidth	= textarea.outerWidth();
+			var originalTextAreaWidth	= "width:40%";
 
 			/* Wrap the text area in the elements we need */
 			textarea.wrap("<div class='linedtextarea'></div>");
-			var linedTextAreaDiv	= textarea.parent().wrap("<div class='linedwrap' style='width:" + originalTextAreaWidth + "px'></div>");
+			// var linedTextAreaDiv	= textarea.parent().wrap("<div class='linedwrap' style='width:" + originalTextAreaWidth + "px'></div>");
+			// var linedTextAreaDiv	= textarea.parent().wrap("<div class='linedwrap'></div>");
+			// var linedTextAreaDiv	= textarea.parent().wrap("<div class='linedwrap' style='width:45%'></div>");
+			var linedTextAreaDiv	= textarea.parent().wrap("<div class='linedwrap' style='" + originalTextAreaWidth + "'></div>");
 			var linedWrapDiv 			= linedTextAreaDiv.parent();
 			
 			linedWrapDiv.prepend("<div class='lines' style='width:50px'></div>");
