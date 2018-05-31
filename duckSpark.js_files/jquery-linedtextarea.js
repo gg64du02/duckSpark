@@ -64,6 +64,7 @@
 			textarea.css({resize:'none'});
 			// var originalTextAreaWidth	= textarea.outerWidth();
 			var originalTextAreaWidth	= "width:40%";
+			// var originalTextAreaWidth	= "width:49%";
 
 			/* Wrap the text area in the elements we need */
 			textarea.wrap("<div class='linedtextarea'></div>");

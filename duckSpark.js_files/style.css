@@ -106,7 +106,20 @@ orginal
   height: calc(100% - 50px - 32px);
 }
 */
+/*
+.inout-wrapper .linedwrap{
+  float: right;
+}
+*/
 
+.linedwrap:last-child{
+  float: right;
+}
+
+
+.linedwrap:first-child{
+  float: left;
+}
 
 .inout .duckyscript {
   float: left;
