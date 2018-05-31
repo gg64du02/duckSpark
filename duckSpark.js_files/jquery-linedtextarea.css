@@ -68,7 +68,19 @@ orginal
 	overflow: hidden;
 	border-right: 1px solid #c0c0c0;
 	margin-right: 10px;
+     margin-top: 16px;
 }
+/*
+original
+.linedwrap .lines {
+	margin-top: 0px;
+	width: 50px;
+	float: left;
+	overflow: hidden;
+	border-right: 1px solid #c0c0c0;
+	margin-right: 10px;
+}
+*/
 
 .linedwrap .codelines {
 	padding-top: 5px;
