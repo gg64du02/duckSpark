@@ -28,7 +28,15 @@
 .linedtextarea {
 	padding: 0px;
 	margin: 0px;
+	height:100%;
 }
+/*
+original
+.linedtextarea {
+	padding: 0px;
+	margin: 0px;
+}
+*/
 
 .linedtextarea textarea, .linedwrap .codelines .lineno {
 	font-size: 10pt;
@@ -40,7 +48,18 @@
 	padding-right:0.3em;
 	padding-top:0.3em;
 	border: 0;
+	width:80%;
 }
+
+/*
+orginal
+.linedtextarea textarea {
+	padding-right:0.3em;
+	padding-top:0.3em;
+	border: 0;
+	width:100%;
+}
+*/
 
 .linedwrap .lines {
 	margin-top: 0px;
