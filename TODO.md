@@ -1,4 +1,5 @@
 
+# TODO: add line numbers in duckSpark.js
 
 # TODO: make a video about it ?
 
@@ -88,6 +89,8 @@ w/ proper stylesheet ?
 # DONE: try most scripts available with hak5's payloads
 |-> tested duckSpark.js on all of them, the 30/05/2018
 |-> some were ajusted/corrected to work with duckSpark.js (error in the script, not a converter side issue)
+
+# DONE: change the webpage's title
 
 # =============================================================
 
