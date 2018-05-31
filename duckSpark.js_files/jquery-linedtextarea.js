@@ -66,7 +66,8 @@
 			// var originalTextAreaWidth	= "width:40%";
 			// var originalTextAreaWidth	= "width:49%";
 			// var originalTextAreaWidth	= "width:50%";
-			var originalTextAreaWidth	= "width:49%;     height: calc(100% - 50px - 32px)";
+			// var originalTextAreaWidth	= "width:49%;     height: calc(100% - 50px - 32px)";
+			var originalTextAreaWidth	= "width:49%;     height: calc(100%)";
 
 			/* Wrap the text area in the elements we need */
 			textarea.wrap("<div class='linedtextarea'></div>");
