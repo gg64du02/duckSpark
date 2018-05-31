@@ -86,6 +86,8 @@ menu a.hoverable:hover {
   margin: 16px; padding: 2px;
   width: calc(50% - calc(32px + 2px + 6px));
   height: calc(100% - 50px - 32px);
+  
+  margin-left: 2px;
 }
 
 /*
