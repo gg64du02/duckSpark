@@ -427,13 +427,13 @@ class Dckuinojs {
 			  //console.log(string.indexOf(substring) !== -1);
 			  
 			 //gg64du02 2018
-			console.log("wordArray[0]:"+wordArray[0]);
-			console.log("wordArray[1]:"+wordArray[1]);
-			console.log("comboMap[wordArray[0]]:"+comboMap[wordArray[0]]);
-			console.log("comboMap[wordArray[1]]:"+comboMap[wordArray[1]]);
-			console.log("commandMap[wordArray[0]]:"+commandMap[wordArray[0]]);
-			console.log("commandMap[wordArray[1]]:"+commandMap[wordArray[1]]);
-			console.log("wordArray.length:"+wordArray.length);
+			// console.log("wordArray[0]:"+wordArray[0]);
+			// console.log("wordArray[1]:"+wordArray[1]);
+			// console.log("comboMap[wordArray[0]]:"+comboMap[wordArray[0]]);
+			// console.log("comboMap[wordArray[1]]:"+comboMap[wordArray[1]]);
+			// console.log("commandMap[wordArray[0]]:"+commandMap[wordArray[0]]);
+			// console.log("commandMap[wordArray[1]]:"+commandMap[wordArray[1]]);
+			// console.log("wordArray.length:"+wordArray.length);
 			
 			if (comboMap[wordArray[0]] !== undefined)
             {
@@ -493,7 +493,7 @@ class Dckuinojs {
               releaseAll = true;
 				tmpStringGG = '  DigiKeyboard.sendKeyStroke('+commandMap[wordArray[1]] ;
 				tmpStringGG = tmpStringGG+ ', MODIFIERKEY_LEFT_CTRL_LEFT_SHIFT);\n';
-				console.log(',MODIFIERKEY_LEFT_CTRL_LEFT_SHIFT');
+				// console.log('MODIFIERKEY_LEFT_CTRL_LEFT_SHIFT');
 				
 				parsedOut += tmpStringGG;
 			
@@ -532,7 +532,7 @@ class Dckuinojs {
 	  
 	  //support of default delay
 	  //gg64du02
-	  console.log("param_DEFAULT_DELAY:"+param_DEFAULT_DELAY);
+	  // console.log("param_DEFAULT_DELAY:"+param_DEFAULT_DELAY);
 	  if(parseInt(param_DEFAULT_DELAY) !==0){
 		  parsedOut +='  DigiKeyboard.delay(' + param_DEFAULT_DELAY + ');\n';
 	  }
