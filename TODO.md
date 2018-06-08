@@ -1,6 +1,4 @@
 
-# TODO: make a video about it ?
-
 # TODO:Add an info button next to it when the RAM usage guess is RED.
 
 # TODO: Make it deployment friendly for a website (I don't know if it currently works)
@@ -92,6 +90,7 @@ w/ proper stylesheet ?
 
 # DONE: add line numbers in duckSpark.js
 
+# DONE: make a video about it ?
 
 # =============================================================
 
