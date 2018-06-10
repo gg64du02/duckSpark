@@ -1,5 +1,6 @@
 
-# TODO: add Edge support
+# TODO: correct style sheet for the console error in firefox (5.2% marketshare)
+still works but you can't read the lines' number if you are on firefox
 
 # TODO:Add an info button next to it when the RAM usage guess is RED.
 
@@ -15,6 +16,7 @@ maybe it will save the lenght issue ?!?
 DigiKeyboard.println("abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890ß ü+öä#,.- !"X$%&/()=? Ü*ÖÄ';:_ {[]}\~ <>| @§ ^´``");
 
 # TODO: make a more accurate predection of RAM use
+# TODO: add Edge support (1.9% marketshare)
 
 # =============================================================
 # DONE: (the Ino) Make the custom payload discovered (multiOS: 7 8 10) public (no spoiler ;) )
@@ -93,6 +95,11 @@ w/ proper stylesheet ?
 # DONE: add line numbers in duckSpark.js
 
 # DONE: make a video about it ?
+
+# DONE: test chromium-browser: works
+
+# DONE: test chrome: works (58% marketshare)
+
 
 # =============================================================
 
