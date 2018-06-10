@@ -6,7 +6,7 @@
 
 A converter to convert USB rubber ducky's script to digispark code to put in Arduino IDE.
 
-## Demo:
+## Demo (on windows 10 with Chrome):
 
 https://www.youtube.com/watch?v=pLp1L13LBwA
 

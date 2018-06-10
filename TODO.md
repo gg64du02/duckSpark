@@ -1,4 +1,6 @@
 
+# TODO: add Edge support
+
 # TODO:Add an info button next to it when the RAM usage guess is RED.
 
 # TODO: Make it deployment friendly for a website (I don't know if it currently works)
