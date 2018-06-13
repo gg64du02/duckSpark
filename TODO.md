@@ -10,7 +10,7 @@ still works but you can't read the lines' number if you are on firefox
  multiOS 7 8 10 admin command prompt script
 
 # TODO: Try to came a with a single array generation during code translation (duckSpark.js)
-maybe it will save the lenght issue ?!?
+maybe it will save some RAM and allow more lenght ?!?
 
 # TODO: check support of this below string for french keyboard
 DigiKeyboard.println("abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890ß ü+öä#,.- !"X$%&/()=? Ü*ÖÄ';:_ {[]}\~ <>| @§ ^´``");
@@ -100,6 +100,7 @@ w/ proper stylesheet ?
 
 # DONE: test chrome: works (58% marketshare)
 
+# DONE: add explaination about what is the main purpose of each files
 
 # =============================================================
 
