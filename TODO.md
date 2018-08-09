@@ -18,6 +18,9 @@ DigiKeyboard.println("abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234
 # TODO: make a more accurate predection of RAM use
 # TODO: add Edge support (1.9% marketshare)
 
+# TODO: check https://digistump.com/board/index.php?topic=1676.0
+# TODO: check "digiduck uslurper"
+
 # =============================================================
 # DONE: (the Ino) Make the custom payload discovered (multiOS: 7 8 10) public (no spoiler ;) )
 
